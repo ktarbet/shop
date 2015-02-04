@@ -20,9 +20,9 @@ namespace Shop
         static void Main(string[] args)
         {
             //  GEOJson --filter=program:agrimet
-          Console.Write("Content-Type: text/html\n\n");
+            Console.Write("Content-Type:  application/json\n\n");
 
-          var svr = PostgreSQL.GetPostgresServer("timeseries","lrgs1.pn.usbr.gov");
+          var svr = PostgreSQL.GetPostgresServer();
           var db = new TimeSeriesDatabase(svr);
 
           var features = new List<Feature>();
@@ -51,8 +51,8 @@ namespace Shop
           var json = Newtonsoft.Json.JsonConvert.SerializeObject(fc, 
               Newtonsoft.Json.Formatting.Indented,settings);
 
-         // Console.WriteLine(json);
-         File.WriteAllText(@"c:\temp\test.json", json);
+          Console.WriteLine(json);
+         //File.WriteAllText(@"c:\temp\test.json", json);
            
         }
     }

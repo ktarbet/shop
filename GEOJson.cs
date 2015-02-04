@@ -28,24 +28,19 @@ namespace Shop
           var features = new List<Feature>();
           FeatureCollection fc = new FeatureCollection(features);
 
-          var sites = db.GetSiteCatalog();
-            
+          var sites = db.GetSiteCatalog("type = 'agrimet'");
+
+         var siteProp = new TimeSeriesDatabaseDataSet.sitepropertiesDataTable(db);
+
           foreach (var s in sites)
           {
-              if (s.type.IndexOf("agrimet") < 0)
-                  continue;
-
               var pos = new GeographicPosition(s.latitude,s.longitude);
               var pt = new GeoJSON.Net.Geometry.Point(pos);
-              
-              var props = new Dictionary<string,object>();
-              props.Add("program", "agrimet");
+
+              var props = siteProp.GetDictionary(s.siteid);
+
               props.Add("cbtt", s.siteid);
               props.Add("title", s.description);
-              props.Add("url","abeida.html");
-
-
-
               var feature = new Feature(pt,props,s.siteid);
 
               fc.Features.Add(feature);
@@ -56,8 +51,8 @@ namespace Shop
           var json = Newtonsoft.Json.JsonConvert.SerializeObject(fc, 
               Newtonsoft.Json.Formatting.Indented,settings);
 
-          Console.WriteLine(json);
-          //File.WriteAllText(@"c:\temp\test.json", json);
+         // Console.WriteLine(json);
+         File.WriteAllText(@"c:\temp\test.json", json);
            
         }
     }

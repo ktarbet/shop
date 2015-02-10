@@ -22,7 +22,7 @@ namespace Shop
             //  GEOJson --filter=program:agrimet
           Console.Write("Content-Type: text/html\n\n");
 
-          var svr = PostgreSQL.GetPostgresServer("timeseries","lrgs1.pn.usbr.gov");
+          var svr = PostgreSQL.GetPostgresServer("timeseries","lrgs1");
           var db = new TimeSeriesDatabase(svr);
 
           var features = new List<Feature>();

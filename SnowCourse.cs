@@ -8,7 +8,7 @@ using Reclamation.Core;
 using Reclamation.TimeSeries.Nrcs;
 namespace Shop
 {
-    class Program
+    class SnowCourse
     {
         static void Main(string[] args)
         {
@@ -30,34 +30,20 @@ namespace Shop
                 triplet += ":SNOW";
 
                 string cbtt = row["cbtt"].ToString();
-                SnotelSeries su = new SnotelSeries(triplet, SnotelParameterCodes.WTEQ);
-                su.TimeSeriesDatabase = db;
-                su.Name = row["name"].ToString().Trim();
-                su.Table.TableName = "daily_"+cbtt+"_"+row["type"].ToString();
-                var siteFolder = db.GetOrCreateFolder(null, "hydromet", cbtt, "daily");
-                var id = db.AddSeries(su,siteFolder);
-                
-                su.Properties.Set("agency", "nrcs", id);
-                su.Properties.Set("nrcs_type", "SNOW", id);
-                su.Properties.Save();
                 var monthlyFolder = db.GetOrCreateFolder(null, "hydromet", cbtt, "monthly");
                 var m = new CalculationSeries(db);
-                m.Name = su.Name;
-                m.Table.TableName = su.Table.TableName.Replace("daily","monthly");
+                m.Name = row["name"].ToString();
+                m.Table.TableName = "monthly_" + cbtt + "_" + row["type"].ToString();
                 m.TimeInterval = TimeInterval.Monthly;
-                m.Expression = "DailySnowToMonthly(" + su.Table.TableName + ")";
-                id = db.AddSeries(m,monthlyFolder);
+                m.Expression = "DailySnowCourseToMonthly(\""+triplet+"\")";
+                var id = db.AddSeries(m,monthlyFolder);
+                m.Properties.Set("program", "hydromet",id);
                 m.Properties.Set("agency","nrcs", id);
                 m.Properties.Set("nrcs_type", "SNOW", id);
                 m.Properties.Save();
             }
             svr.SaveTable(sc);
             
-            // how to get snow course daily to monthly???
-            // options: 
-            //  1) -- function  monthly_boig_su = DailySnowCourseToMonthly(daily_bogi_su)
-            //  2) -- smart series  SnotelMonthly.
-            //  3) -- some other custom process.
 
         }
     }

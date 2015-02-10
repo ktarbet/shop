@@ -21,8 +21,10 @@ namespace Shop
             var sc = db.GetSeriesCatalog();
 
            //RenameUntitled(svr, db);
-            // FixSiteID(svr, sc);
+            FixSiteID(svr, sc);
             FixBlankInterval(db);
+            FixFolderStructure(db,sc);
+
            
 
         }
@@ -40,13 +42,15 @@ namespace Shop
                 {
                     Console.Write(item.Name+" "+item.TableName);
                     Console.WriteLine(" Setting interval to "+TimeInterval.Irregular);
+                    item.TimeInterval = TimeInterval.Irregular.ToString();
                 }
             }
 
-            db.Server.SaveTable(sc);
+            int i = db.Server.SaveTable(sc);
+            Console.WriteLine(i+" rows saved");
         }
 
-        private static void FixFolderStructure(TimeSeriesDatabaseDataSet.SeriesCatalogDataTable sc)
+        private static void FixFolderStructure( TimeSeriesDatabase db, TimeSeriesDatabaseDataSet.SeriesCatalogDataTable sc)
         {
 
             for (int i = 0; i < sc.Count; i++)
@@ -57,6 +61,7 @@ namespace Shop
                     continue;
 
                 var parent = sc.GetParent(row);
+              
                 var grandParent = sc.GetParent(parent);
                 // parent should be instant, then grandparent should be sitename
                 TimeSeriesName tn = new TimeSeriesName(row.TableName);
@@ -97,7 +102,7 @@ namespace Shop
 
             }
 
-            //svr.SaveTable(sc);
+            db.Server.SaveTable(sc);
 
         }
 
@@ -112,7 +117,7 @@ namespace Shop
                     continue;
 
                 TimeSeriesName tn = new TimeSeriesName(row.TableName);
-                if (row.siteid == "")
+                if (row.siteid == "" && tn.siteid != "")
                 {
                     Console.WriteLine("Site ID is blank. chaning to "+ "  " + tn.siteid);
                     row.siteid = tn.siteid;

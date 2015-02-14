@@ -37,9 +37,9 @@ namespace Shop
                 m.TimeInterval = TimeInterval.Monthly;
                 m.Expression = "DailySnowCourseToMonthly(\""+triplet+"\")";
                 var id = db.AddSeries(m,monthlyFolder);
-                m.Properties.Set("program", "hydromet",id);
-                m.Properties.Set("agency","nrcs", id);
-                m.Properties.Set("nrcs_type", "SNOW", id);
+                m.Properties.Set("program", "hydromet");
+                m.Properties.Set("agency","nrcs");
+                m.Properties.Set("nrcs_type", "SNOW");
                 m.Properties.Save();
             }
             svr.SaveTable(sc);

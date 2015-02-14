@@ -60,50 +60,55 @@ namespace Shop
                     || row.Provider != "Series")
                     continue;
 
-                var parent = sc.GetParent(row);
-              
-                var grandParent = sc.GetParent(parent);
-                // parent should be instant, then grandparent should be sitename
-                TimeSeriesName tn = new TimeSeriesName(row.TableName);
-
-                if (parent.Name != "instant" || grandParent.Name != row.siteid)
-                {
-                    //Console.WriteLine(i + "  " + row.Name + " parent = " + parent.Name + " grandparent = " + grandParent.Name);
-                    // find grandparent (siteid)
-                    var site = sc.Select("name = '" + tn.siteid + "'");
-                    if (site.Length != 1)
-                        Console.WriteLine("Error: folder " + tn.siteid + " not found");
-                    else
-                    {// put items in the folder.
-                        // look for instant and daily folders
-                        var site2 = site[0] as Reclamation.TimeSeries.TimeSeriesDatabaseDataSet.SeriesCatalogRow;
-                        var instant = sc.Select("parentid =" + site2.id + " and name = 'instant' ");
-                        int instantid = -1;
-                        if (instant.Length == 0)
-                        {
-                            Console.WriteLine("creating folder " + site2.Name + "/instant");
-                            instantid = sc.AddFolder("instant", site2.id);
-                        }
-                        else
-                        {
-                            instantid = Convert.ToInt32(instant[0]["id"]);
-                            if (row.ParentID != instantid)
-                            {
-                                Console.WriteLine(i + "  " + row.Name + " parent = " + parent.Name + " grandparent = " + grandParent.Name);
-
-                                Console.WriteLine(" instant id = " + instantid);
-                                row.ParentID = instantid;
-                            }
-                        }
-
-
-                    }
-                }
+                FindOrCreateFolder(sc, row);
 
             }
 
             db.Server.SaveTable(sc);
 
+        }
+
+        public static void FindOrCreateFolder(TimeSeriesDatabaseDataSet.SeriesCatalogDataTable sc, TimeSeriesDatabaseDataSet.SeriesCatalogRow row)
+        {
+            var parent = sc.GetParent(row);
+
+            var grandParent = sc.GetParent(parent);
+            // parent should be instant, then grandparent should be sitename
+            TimeSeriesName tn = new TimeSeriesName(row.TableName);
+
+            if (parent.Name != "instant" || grandParent.Name != row.siteid)
+            {
+                //Console.WriteLine(i + "  " + row.Name + " parent = " + parent.Name + " grandparent = " + grandParent.Name);
+                // find grandparent (siteid)
+                var site = sc.Select("name = '" + tn.siteid + "'");
+                if (site.Length != 1)
+                    Console.WriteLine("Error: folder " + tn.siteid + " not found");
+                else
+                {// put items in the folder.
+                    // look for instant and daily folders
+                    var site2 = site[0] as Reclamation.TimeSeries.TimeSeriesDatabaseDataSet.SeriesCatalogRow;
+                    var instant = sc.Select("parentid =" + site2.id + " and name = 'instant' ");
+                    int instantid = -1;
+                    if (instant.Length == 0)
+                    {
+                        Console.WriteLine("creating folder " + site2.Name + "/instant");
+                        instantid = sc.AddFolder("instant", site2.id);
+                    }
+                    else
+                    {
+                        instantid = Convert.ToInt32(instant[0]["id"]);
+                        if (row.ParentID != instantid)
+                        {
+                            Console.WriteLine( row.Name + " parent = " + parent.Name + " grandparent = " + grandParent.Name);
+
+                            Console.WriteLine(" instant id = " + instantid);
+                            row.ParentID = instantid;
+                        }
+                    }
+
+
+                }
+            }
         }
 
 

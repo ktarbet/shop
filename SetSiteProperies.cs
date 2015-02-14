@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 
 namespace Shop
 {
-    class Program
+    class SetSiteProperies
     {
         static void Main(string[] args)
         {

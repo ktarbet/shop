@@ -13,7 +13,7 @@ namespace Shop
     {
         static void Main(string[] args)
         {
-            var svr = PostgreSQL.GetPostgresServer("timeseries", "lrgs1");
+            var svr = PostgreSQL.GetPostgresServer("timeseries", "lrgs3");
             var db = new TimeSeriesDatabase(svr, Reclamation.TimeSeries.Parser.LookupOption.TableName);
             var sc = db.GetSeriesCatalog();
             var prop = db.GetSeriesProperties(true);
@@ -36,34 +36,74 @@ namespace Shop
                 var offset = pcode.OFFSET.ToString("F4");
                 var shift = pcode.SHIFT.ToString("F4");
 
-                if (pcode.RTCPROC.ToLower() == "ch_weir")
+                string[] genericWeir = { "ch_weir", "gh_weir", "gh_weirx" };
+
+                if ( Array.IndexOf(genericWeir, pcode.RTCPROC.ToLower()) >=0 )
                 {
-                    //afci_ch+%property%.shift+1.2
-                    sc.AddInstantRow(cbtt, "feet", "ch", "");
-                    var id = sc.AddInstantRow(cbtt, "cfs", pc, "GenericWeir(%site%_ch+%property%.shift+"+ offset+ "," + width_factor + "," + exponent + ")");
-                    // TO DO.. SAVE SHIFT may need new function
-                    //var id = sc.AddInstantRow(cbtt, "feet", "hh", "%property%.shift" + width_factor + "," + exponent + ")");
-                    prop.Set("shift", shift, id); // save current shift in properties.
+                    AddGenericWeir(sc, prop, cbtt, pc, width_factor, exponent, offset, shift);
                 }
-                if (pcode.RTCPROC.ToLower() == "gh_weir")
+                else if (pcode.RTCPROC.ToLower() == "r_weir")
                 {
-                    sc.AddInstantRow(cbtt, "feet", "gh", "");
-                    var id = sc.AddInstantRow(cbtt, "cfs", pc, "GenericWeir(%site%_gh+%property%.shift+" + offset + "," + width_factor + "," + exponent + ")");
-                    // TO DO.. SAVE SHIFT may need new function
-                    //var id = sc.AddInstantRow(cbtt, "feet", "hh", "%property%.shift" + width_factor + "," + exponent + ")");
-                    prop.Set("shift", shift, id); // save current shift in properties.
+                    // Rectangular Weir
                 }
-                if (pcode.RTCPROC.ToLower() == "gh_weirx")
-                {
-                    sc.AddInstantRow(cbtt, "feet", "gh", "");
-                    var id = sc.AddInstantRow(cbtt, "cfs", pc, "GenericWeir(%site%_gh+%property%.shift+" + offset + "," + width_factor + "," + exponent + ")");
-                    // TO DO.. SAVE SHIFT may need new function
-                    //var id = sc.AddInstantRow(cbtt, "feet", "hh", "%property%.shift" + width_factor + "," + exponent + ")");
-                    prop.Set("shift", shift, id); // save current shift in properties.
-                }
+
             }
 
             Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Add the following
+        /// 
+        /// cbtt_ch|gh = ""
+        /// cbtt_hh|hj = ConstantShift(...)
+        /// cbtt_(q|qc) = GenericWeir(....)
+        /// 
+        /// </summary>
+        /// <param name="sc"></param>
+        /// <param name="prop"></param>
+        /// <param name="cbtt"></param>
+        /// <param name="pc"></param>
+        /// <param name="width_factor"></param>
+        /// <param name="exponent"></param>
+        /// <param name="offset"></param>
+        /// <param name="shift"></param>
+        private static void AddGenericWeir(TimeSeriesDatabaseDataSet.SeriesCatalogDataTable sc, 
+            TimeSeriesDatabaseDataSet.seriespropertiesDataTable prop,
+            string cbtt, string pc, 
+            string width_factor, string exponent, string offset, string shift)
+        {
+            
+            string shiftCode = "";
+            string flowCode = "";
+            if (pc == "ch")
+            {
+                shiftCode = "hh";
+                flowCode = "qc";
+            }
+            else
+            {
+                shiftCode = "hj";
+                flowCode = "q";
+            }
+
+            // afci_qc = GenericWeir(afci_ch,width_factor,exponent) // smart to look for shift... in afci_ch.Properties.shift
+            // afci_hh = ConstantShift(afci_ch); // lookup shift from properties...
+            // afci_ch.shift=-0.41 
+
+
+            var id = sc.AddInstantRow(cbtt, "feet", pc, "");
+            prop.Set("shift", shift, id); // save current shift in properties.
+            prop.Set("program", "hydromet", id);
+            sc.AddInstantRow(cbtt, "feet", shiftCode, "ConstantShift(%site%_" + pc + ")");
+            prop.Set("program", "hydromet", id);
+
+            string expression = "GenericWeir(%site%_"+pc+","+offset + "," + width_factor + "," + exponent + ")";
+            id = sc.AddInstantRow(cbtt, "cfs", flowCode, expression);
+            prop.Set("program", "hydromet", id);
+
+
+            
         }
     }
 }

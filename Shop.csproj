@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Shop.InstallWeirEquations</StartupObject>
+    <StartupObject>Shop.AddOWRDToPiscesAndDecodes</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoJSON.Net, Version=0.0.33.0, Culture=neutral, processorArchitecture=MSIL">
@@ -56,6 +56,8 @@
   <ItemGroup>
     <Compile Include="BillsKml.cs" />
     <Compile Include="CleanupSeriesCatalog.cs" />
+    <Compile Include="OWRDInventoryHelper.cs" />
+    <Compile Include="AddOWRDToPiscesAndDecodes.cs" />
     <Compile Include="SetQualityLimits.cs" />
     <Compile Include="InstallWeirEquations.cs" />
     <Compile Include="SetSiteProperies.cs" />
@@ -64,6 +66,10 @@
     <Compile Include="SnowCourse.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hydromet\HydrometTools\HydrometTools.csproj">
+      <Project>{e5bf67d9-a1ac-4878-8072-0e5a23ea17cd}</Project>
+      <Name>HydrometTools</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pisces\Core\Reclamation.Core.csproj">
       <Project>{80c73d4c-43cf-42de-addc-7b0f06ecf086}</Project>
       <Name>Reclamation.Core</Name>

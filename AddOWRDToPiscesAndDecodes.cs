@@ -8,6 +8,8 @@ using System.Xml.XPath;
 using Reclamation.Core;
 using Reclamation.TimeSeries.Hydromet;
 using System.Data;
+using Reclamation.TimeSeries.Decodes;
+using Reclamation.TimeSeries;
 
 
 namespace Shop
@@ -16,65 +18,82 @@ namespace Shop
     {
         static void Main(string[] args)
         {
-            string serverIP = "140.218.6.20";
+            string serverIP = "140.218.6.110";
             //.Logger.Logger.EnableLogger();
 
             var fn = @"V:\PN6200\Hydromet\HelpWanted\migrate to linux.xls";
             var tbl = ExcelDB.Read(fn,"owrd_1");
 
+            var cs = PostgreSQL.CreateADConnectionString(serverIP,"timeseries");
+            PostgreSQL svr = new PostgreSQL(cs);
+
+            //SQLiteServer svr = new SQLiteServer(@"c:\temp\lrgs1.pdb");
+            TimeSeriesDatabase db = new TimeSeriesDatabase(svr);
+
+            AddToPisces(tbl,db);
             AddSitesToDecodes(serverIP, tbl);
 
-            return;
+        }
 
+        private static void AddToPisces(DataTable tbl, TimeSeriesDatabase db)
+        {
             Console.WriteLine("Reading mcf ");
             var mcf = McfUtility.GetDataSetFromCsvFiles(Globals.LocalConfigurationDataPath);
 
             var site = mcf.sitemcf;
+            var siteCatalog = db.GetSiteCatalog();
+            PiscesSeriesLoader loader = new PiscesSeriesLoader(db);
 
             foreach (DataRow row in tbl.Rows)
             {
-                var cbtt = row[0].ToString().ToUpper().Trim();
-                Console.Write(cbtt+ " ");
+                var cbtt = row[0].ToString().ToLower().Trim();
+                Console.Write(cbtt + " ");
 
-                var site1 = site.First(x => x.SITE.Trim() == cbtt.Trim() );
+                //var dbSite = siteCatalog.First(x => x.siteid == cbtt.Trim());
 
-                Console.Write(site1.NESSID+" " );
+                var site1 = site.First(x => x.SITE.Trim() == cbtt.ToUpper().Trim());
 
-                
+                if (site1.CTYPE.Trim() != "P") // parameter based
+                    throw new Exception("not parameter based processing");
+                int folderID = loader.SeriesCatalog.GetOrCreateFolder("hydromet", cbtt, "instant");
 
-                // look for shared nessid...
-                var others = site.Where(x => x.NESSID == site1.NESSID && x.NESSID != "0");
-                Console.Write("shared:");
-                if (others.Count() > 1)
-                {
-                    throw new Exception("Error:  nessid is shared in multiple sites");
-                }
-                    // check for alarms...
+                var pcodes = mcf.pcodemcf.Where(x => x.PCODE.IndexOf(cbtt.ToUpper()) >= 0
+                     && x.ACTIVE == 1 );
 
-                    var pcodes = mcf.pcodemcf.Where(x => x.PCODE.IndexOf(cbtt) >= 0
-                         && x.ACTIVE == 1 && x.ALMSW == 1);
-
-                    Console.Write(" ALARM:");
-                    foreach (var item in pcodes)
-                    {
-                        var pc = item.PCODE.Trim();
-                        if (pc.Length > 8)
-                            pc = pc.Substring(8);
-                        Console.Write(pc+",");
-                    }
-
+                AddPcodesToPisces(loader,folderID, cbtt, pcodes);
+               db.Server.SaveTable(loader.SeriesCatalog);
                 Console.WriteLine();
             }
-
-
         }
+
+        private static void AddPcodesToPisces(PiscesSeriesLoader loader, 
+            int parentID,string cbtt, EnumerableRowCollection<McfDataSet.pcodemcfRow> pcodes)
+        {
+            foreach (var item in pcodes)
+            {
+                var rtcproc = item.RTCPROC.Trim().Replace("\0", "");
+                var pc = item.PCODE.Trim();
+                if (pc.Length > 8)
+                    pc = pc.Substring(8).Trim();
+
+                pc = pc.ToLower();
+
+                loader.AddToPisces( parentID, cbtt, pc);
+
+                if (rtcproc != "")
+                    pc += "[" + rtcproc + "]";
+                Console.Write(pc + ",");
+            }
+        }
+
+        
 
         private static void AddSitesToDecodes(string serverIP, DataTable tbl)
         {
             var siteFilter = String.Join(",", DataTableUtility.Strings(tbl, "", "cbtt"));
             siteFilter = siteFilter.ToUpper();
 
-            MrdbToDecodes.McfToDecodes.Import(serverIP, "hydromet_decodes", siteFilter, "owrd");
+            McfToDecodes.Import(serverIP, "hydromet_decodes", siteFilter, "owrd");
         }
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="CleanupSeriesCatalog.cs" />
     <Compile Include="OWRDInventoryHelper.cs" />
     <Compile Include="AddOWRDToPiscesAndDecodes.cs" />
+    <Compile Include="PiscesSeriesLoader.cs" />
     <Compile Include="SetQualityLimits.cs" />
     <Compile Include="InstallWeirEquations.cs" />
     <Compile Include="SetSiteProperies.cs" />

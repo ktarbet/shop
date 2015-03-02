@@ -86,20 +86,20 @@ namespace Shop
                 shiftCode = "hj";
                 flowCode = "q";
             }
-
+            int parentID = 0; // TO DO.
             // afci_qc = GenericWeir(afci_ch,width_factor,exponent) // smart to look for shift... in afci_ch.Properties.shift
             // afci_hh = ConstantShift(afci_ch); // lookup shift from properties...
             // afci_ch.shift=-0.41 
 
 
-            var id = sc.AddInstantRow(cbtt, "feet", pc, "");
+            var id = sc.AddInstantRow(cbtt, parentID, "feet", pc, "");
             prop.Set("shift", shift, id); // save current shift in properties.
             prop.Set("program", "hydromet", id);
-            sc.AddInstantRow(cbtt, "feet", shiftCode, "ConstantShift(%site%_" + pc + ")");
+            sc.AddInstantRow(cbtt, parentID, "feet", shiftCode, "ConstantShift(%site%_" + pc + ")");
             prop.Set("program", "hydromet", id);
 
             string expression = "GenericWeir(%site%_"+pc+","+offset + "," + width_factor + "," + exponent + ")";
-            id = sc.AddInstantRow(cbtt, "cfs", flowCode, expression);
+            id = sc.AddInstantRow(cbtt, parentID, "cfs", flowCode, expression);
             prop.Set("program", "hydromet", id);
 
 

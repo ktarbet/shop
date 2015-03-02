@@ -18,7 +18,7 @@ namespace Shop
     {
         static void Main(string[] args)
         {
-            string serverIP = "140.218.6.110";
+            string serverIP = "";
             //.Logger.Logger.EnableLogger();
 
             var fn = @"V:\PN6200\Hydromet\HelpWanted\migrate to linux.xls";

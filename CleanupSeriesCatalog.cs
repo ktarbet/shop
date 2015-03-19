@@ -14,19 +14,36 @@ namespace Shop
 
          //   Console.WriteLine(DateTime.Now.Ticks);
 
-
+           // Logger.EnableLogger();
             var svr = PostgreSQL.GetPostgresServer("timeseries", "lrgs1");
             var db = new TimeSeriesDatabase(svr, Reclamation.TimeSeries.Parser.LookupOption.TableName);
 
             var sc = db.GetSeriesCatalog();
+            SortFoldersByName(db, "agrimet");
 
            //RenameUntitled(svr, db);
-            FixSiteID(svr, sc);
-            FixBlankInterval(db);
-            FixFolderStructure(db,sc);
+         //   FixSiteID(svr, sc);
+          //  FixBlankInterval(db);
+           // FixFolderStructure(db,sc);
 
            
 
+        }
+
+        private static void SortFoldersByName(TimeSeriesDatabase db, string parentFolderName)
+        {
+            var parent = db.GetOrCreateFolder(parentFolderName);
+
+            var sc = db.GetSeriesCatalog("parentid = "+ parent.ID+" and isfolder = 1 ",""," order by name");
+            int sortOrder = 10;
+            for (int i = 0; i < sc.Rows.Count; i++)
+            {
+                if( sc[i].siteid == "")
+                 sc[i].siteid = sc[i].Name; // fix... siteid might be handy on a folder
+                sc[i].SortOrder = sortOrder;
+                sortOrder += 10;
+            }
+            db.Server.SaveTable(sc);
         }
 
         private static void FixBlankInterval(TimeSeriesDatabase db)
@@ -53,62 +70,64 @@ namespace Shop
         private static void FixFolderStructure( TimeSeriesDatabase db, TimeSeriesDatabaseDataSet.SeriesCatalogDataTable sc)
         {
 
+            var siteCatalog = db.GetSiteCatalog();
             for (int i = 0; i < sc.Count; i++)
             {
                 var row = sc[i];
                 if (row.IsFolder || row.TimeInterval != TimeInterval.Irregular.ToString()
                     || row.Provider != "Series")
                     continue;
+                TimeSeriesName tn = new TimeSeriesName(row.TableName);
+                var s = db.GetSeries(row.id);
+                var program = GetProgramName(siteCatalog, tn, s);
+                if(program == "" || ( program != "hydromet" && program != "agrimet") )
+                {
+                    Console.WriteLine("Error: no program defined in series or type in sitecatalog");
+                }
+                else
+                {
+                    var myPath = sc.GetPath(row.id);
+                    var myPathJoin = String.Join("/", myPath);
 
-                FindOrCreateFolder(sc, row);
+                    
+                    string[] path = {"timeseries",program,tn.siteid,"instant"};
+                    var expectedPath =String.Join("/", path);
 
+                    if (myPathJoin != expectedPath)
+                    {
+                        Console.Write("existing: " + tn.GetTableName() + " " + myPathJoin);
+                        Console.WriteLine(" new " + expectedPath);
+
+                        //.String.int id = sc.GetOrCreateFolder(path);
+                        //row.ParentID = id;
+                    }
+                    
+                    
+                }
+                
             }
 
-            db.Server.SaveTable(sc);
+           db.Server.SaveTable(sc);
 
         }
 
-        public static void FindOrCreateFolder(TimeSeriesDatabaseDataSet.SeriesCatalogDataTable sc, TimeSeriesDatabaseDataSet.SeriesCatalogRow row)
+        private static string GetProgramName(TimeSeriesDatabaseDataSet.sitecatalogDataTable siteCatalog, TimeSeriesName tn, Series s)
         {
-            var parent = sc.GetParent(row);
-
-            var grandParent = sc.GetParent(parent);
-            // parent should be instant, then grandparent should be sitename
-            TimeSeriesName tn = new TimeSeriesName(row.TableName);
-
-            if (parent.Name != "instant" || grandParent.Name != row.siteid)
+            var program = s.Properties.Get("program");
+            if (program == "")
             {
-                //Console.WriteLine(i + "  " + row.Name + " parent = " + parent.Name + " grandparent = " + grandParent.Name);
-                // find grandparent (siteid)
-                var site = sc.Select("name = '" + tn.siteid + "'");
-                if (site.Length != 1)
-                    Console.WriteLine("Error: folder " + tn.siteid + " not found");
-                else
-                {// put items in the folder.
-                    // look for instant and daily folders
-                    var site2 = site[0] as Reclamation.TimeSeries.TimeSeriesDatabaseDataSet.SeriesCatalogRow;
-                    var instant = sc.Select("parentid =" + site2.id + " and name = 'instant' ");
-                    int instantid = -1;
-                    if (instant.Length == 0)
-                    {
-                        Console.WriteLine("creating folder " + site2.Name + "/instant");
-                        instantid = sc.AddFolder("instant", site2.id);
-                    }
-                    else
-                    {
-                        instantid = Convert.ToInt32(instant[0]["id"]);
-                        if (row.ParentID != instantid)
-                        {
-                            Console.WriteLine( row.Name + " parent = " + parent.Name + " grandparent = " + grandParent.Name);
-
-                            Console.WriteLine(" instant id = " + instantid);
-                            row.ParentID = instantid;
-                        }
-                    }
-
-
+                Console.WriteLine("program not defined" + tn.GetTableName());
+                // try site name
+                var site = siteCatalog.FindBysiteid(tn.siteid);
+                if (site.type != "")
+                {
+                    Console.WriteLine("Using type from site list: " + site.type);
+                    program = site.type;
+                    //  s.Properties.Set("program", site.type);
+                    //s.Properties.Save(); .. not now.. might create extra network traffic to pnhyd0 during daily updates
                 }
             }
+            return program;
         }
 
 

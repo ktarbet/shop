@@ -24,8 +24,8 @@ namespace Shop
         {
 
             var svr_vm = MySqlServer.GetMySqlServer("vm", "timeseries");
-            //svr_vm.RunSqlCommand("truncate seriescatalog");
-            //svr_vm.RunSqlCommand("truncate sitecatalog");
+            svr_vm.RunSqlCommand("truncate seriescatalog");
+            svr_vm.RunSqlCommand("truncate sitecatalog");
 
             var db_vm = new TimeSeriesDatabase(svr_vm, Reclamation.TimeSeries.Parser.LookupOption.TableName);
             var sites_vm = db_vm.GetSiteCatalog();
@@ -46,7 +46,21 @@ namespace Shop
             db_vm.Server.SaveTable(sc_vm);
             // install all sites that are referenced in series catalog
 
+            var tmp = db_vm.Server.Table("tmp", "select distinct siteid from seriescatalog");
+            for (int i = 0; i < tmp.Rows.Count; i++)
+            {
+                string siteid = tmp.Rows[i]["siteid"].ToString();
+                var rows = sites.Select("siteid='" + siteid + "'");
+                if (rows.Length > 0)
+                {
+                    var newRow = sites_vm.NewsitecatalogRow();
+                    newRow.ItemArray = rows[0].ItemArray;
+                    sites_vm.Rows.Add(newRow);
+                }
 
+            }
+
+            db_vm.Server.SaveTable(sites_vm);
         }
 
         private static void LoadUpperSnakeHydromet(TimeSeriesDatabaseDataSet.SeriesCatalogDataTable sc_vm)

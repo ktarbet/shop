@@ -19,15 +19,39 @@ namespace Shop
             var db = new TimeSeriesDatabase(svr, Reclamation.TimeSeries.Parser.LookupOption.TableName);
 
             var sc = db.GetSeriesCatalog();
-            SortFoldersByName(db, "agrimet");
+            //SortFoldersByName(db, "agrimet");
+           // SortFoldersByName(db, "hydromet");
 
            //RenameUntitled(svr, db);
-         //   FixSiteID(svr, sc);
-          //  FixBlankInterval(db);
+           // FixBlankInterval(db); // should be fixed in HydrometServer
+            //FixSiteID(svr, sc);  //. should be fixed in HydrometServer
+           
            // FixFolderStructure(db,sc);
 
+           AssignProgramToInstant(db); // agrimet currently uses this to import
            
 
+        }
+
+        private static void AssignProgramToInstant(TimeSeriesDatabase db)
+        {
+            var siteCatalog = db.GetSiteCatalog();
+            var sc = db.GetSeriesCatalog("provider = 'Series' and isfolder =0 and timeinterval='Irregular'");
+          for (int i = 0; i < sc.Count; i++)
+          {
+              var row = sc[i];
+              var s = db.GetSeries(row.id);
+
+              var program = s.Properties.Get("program", "");
+
+              if ( program == "")
+              {
+                  program = EstimateProgramName(siteCatalog, s);
+                  Console.WriteLine(s.Table.TableName + " : program=" + program);
+                  s.Properties.Set("program", program);
+                  s.Properties.Save();
+              }
+          }
         }
 
         private static void SortFoldersByName(TimeSeriesDatabase db, string parentFolderName)
@@ -79,7 +103,7 @@ namespace Shop
                     continue;
                 TimeSeriesName tn = new TimeSeriesName(row.TableName);
                 var s = db.GetSeries(row.id);
-                var program = GetProgramName(siteCatalog, tn, s);
+                var program = EstimateProgramName(siteCatalog, s);
                 if(program == "" || ( program != "hydromet" && program != "agrimet") )
                 {
                     Console.WriteLine("Error: no program defined in series or type in sitecatalog");
@@ -88,43 +112,57 @@ namespace Shop
                 {
                     var myPath = sc.GetPath(row.id);
                     var myPathJoin = String.Join("/", myPath);
-
-                    
+ 
                     string[] path = {"timeseries",program,tn.siteid,"instant"};
+                   
+                    if( IsQualityParameter( tn.pcode))
+                        path = new string[]{"timeseries",program,tn.siteid,"quality"};
+
                     var expectedPath =String.Join("/", path);
 
                     if (myPathJoin != expectedPath)
                     {
-                        Console.Write("existing: " + tn.GetTableName() + " " + myPathJoin);
-                        Console.WriteLine(" new " + expectedPath);
-
+                        Console.WriteLine( myPathJoin+ " --> "+expectedPath );
                         //.String.int id = sc.GetOrCreateFolder(path);
                         //row.ParentID = id;
                     }
-                    
-                    
                 }
-                
             }
 
-           db.Server.SaveTable(sc);
+   //        db.Server.SaveTable(sc);
 
         }
 
-        private static string GetProgramName(TimeSeriesDatabaseDataSet.sitecatalogDataTable siteCatalog, TimeSeriesName tn, Series s)
+        private static bool IsQualityParameter(string p)
+        {
+            string[] quality = {"power","msglen","parity","batvolt","timeerr","lenerr"};
+            return Array.IndexOf(quality, p) >= 0;
+        }
+
+
+        private static string EstimateProgramName(TimeSeriesDatabaseDataSet.sitecatalogDataTable siteCatalog,  Series s)
         {
             var program = s.Properties.Get("program");
+
             if (program == "")
             {
-                Console.WriteLine("program not defined" + tn.GetTableName());
+               // Console.WriteLine("program not defined: " + tn.GetTableName());
                 // try site name
-                var site = siteCatalog.FindBysiteid(tn.siteid);
-                if (site.type != "")
+                var site = siteCatalog.FindBysiteid(s.SiteID);
+
+                if (site == null)
                 {
-                    Console.WriteLine("Using type from site list: " + site.type);
-                    program = site.type;
-                    //  s.Properties.Set("program", site.type);
-                    //s.Properties.Save(); .. not now.. might create extra network traffic to pnhyd0 during daily updates
+                    Console.WriteLine("Null site "+s.SiteID);
+                    return "";
+                }
+
+                if (site.type == "" || site.type == "hydromet" || site.type == "reservoir" || site.type == "weather station")
+                {
+                    program = "hydromet";
+                }
+                if (site.type == "agrimet" )
+                {
+                    program = "agrimet";
                 }
             }
             return program;
@@ -136,7 +174,7 @@ namespace Shop
             for (int i = 0; i < sc.Count; i++)
             {
                 var row = sc[i];
-                if (row.IsFolder || row.TimeInterval != "" //TimeInterval.Irregular.ToString()
+                if (row.IsFolder || row.TimeInterval != TimeInterval.Irregular.ToString()
                     || row.Provider != "Series")
                     continue;
 

@@ -18,6 +18,8 @@ namespace Shop
             var svr = PostgreSQL.GetPostgresServer("timeseries", "lrgs1");
             var db = new TimeSeriesDatabase(svr, Reclamation.TimeSeries.Parser.LookupOption.TableName);
 
+
+            CheckForDuplicates(db);
             var sc = db.GetSeriesCatalog();
             //SortFoldersByName(db, "agrimet");
            // SortFoldersByName(db, "hydromet");
@@ -28,9 +30,30 @@ namespace Shop
            
            // FixFolderStructure(db,sc);
 
-           AssignProgramToInstant(db); // agrimet currently uses this to import
+           //AssignProgramToInstant(db); // agrimet currently uses this to import
            
 
+        }
+
+        private static void CheckForDuplicates(TimeSeriesDatabase db)
+        {
+            string sql = @"
+            select tablename,count(*) from seriescatalog where isfolder =0
+group by tablename
+having count(*)>1";
+            var tbl = db.Server.Table("test", sql);
+
+            if (tbl.Rows.Count > 0)
+            {
+                Console.WriteLine("Error, duplicates ");
+                
+                for (int i = 0; i < tbl.Rows.Count; i++)
+                {
+                    Console.WriteLine(tbl.Rows[i]["tablename"]);
+                }
+                throw new Exception("Error: there are "+tbl.Rows.Count+" duplicates");
+            }
+            
         }
 
         private static void AssignProgramToInstant(TimeSeriesDatabase db)

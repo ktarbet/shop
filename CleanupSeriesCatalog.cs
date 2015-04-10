@@ -27,13 +27,19 @@ namespace Shop
            //RenameUntitled(svr, db);
            // FixBlankInterval(db); // should be fixed in HydrometServer
             //FixSiteID(svr, sc);  //. should be fixed in HydrometServer
-           
-           // FixFolderStructure(db,sc);
+
+            SetSeriesPropertyBasedOnSiteCatalog(db);
+
+         //   FixFolderStructure(db,sc);
 
            //AssignProgramToInstant(db); // agrimet currently uses this to import
-           
+         
+  
+
+
 
         }
+
 
         private static void CheckForDuplicates(TimeSeriesDatabase db)
         {
@@ -54,6 +60,36 @@ having count(*)>1";
                 throw new Exception("Error: there are "+tbl.Rows.Count+" duplicates");
             }
             
+        }
+
+
+        /// <summary>
+        /// We are working through sereis catalog to check for program set to hydromet
+        /// but the actual site in the site catalog is type=agrimet
+        /// </summary>
+        /// <param name="db"></param>
+        private static void SetSeriesPropertyBasedOnSiteCatalog(TimeSeriesDatabase db)
+        {
+            var siteCatalog = db.GetSiteCatalog("type='agrimet'");
+            var seriesCatalog = db.GetSeriesCatalog("timeinterval = 'Irregular' and isfolder = 0");
+
+            for (int i = 0; i < seriesCatalog.Count; i++)
+            {
+                var row = seriesCatalog[i];
+                var s = db.GetSeries(row.id);
+
+                var siteRow = siteCatalog.FindBysiteid(s.SiteID);
+                if (siteRow == null)
+                    continue;
+
+                var program = s.Properties.Get("program", "");
+                if( program != "agrimet")
+                    Console.WriteLine(s.Table.TableName+ "program='"+program+"'  site.type='"+siteRow.type+"'");
+
+            }
+
+            Console.WriteLine();
+
         }
 
         private static void AssignProgramToInstant(TimeSeriesDatabase db)
@@ -129,10 +165,10 @@ having count(*)>1";
                 var program = EstimateProgramName(siteCatalog, s);
                 if(program == "" || ( program != "hydromet" && program != "agrimet") )
                 {
-                    Console.WriteLine("Error: no program defined in series or type in sitecatalog");
+                    Console.WriteLine("Error: will skip,  no program defined in series or type in sitecatalog");
+                    continue;
                 }
-                else
-                {
+
                     var myPath = sc.GetPath(row.id);
                     var myPathJoin = String.Join("/", myPath);
  
@@ -145,11 +181,10 @@ having count(*)>1";
 
                     if (myPathJoin != expectedPath)
                     {
-                        Console.WriteLine( myPathJoin+ " --> "+expectedPath );
+                        Console.WriteLine(tn.pcode+": "+ myPathJoin+ " --> "+expectedPath );
                         //.String.int id = sc.GetOrCreateFolder(path);
                         //row.ParentID = id;
                     }
-                }
             }
 
    //        db.Server.SaveTable(sc);

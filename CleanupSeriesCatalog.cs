@@ -15,7 +15,7 @@ namespace Shop
          //   Console.WriteLine(DateTime.Now.Ticks);
 
            // Logger.EnableLogger();
-            var svr = PostgreSQL.GetPostgresServer("timeseries", "lrgs1");
+            var svr = PostgreSQL.GetPostgresServer("timeseries", "lrgs3");
             var db = new TimeSeriesDatabase(svr, Reclamation.TimeSeries.Parser.LookupOption.TableName);
 
 
@@ -28,9 +28,9 @@ namespace Shop
            // FixBlankInterval(db); // should be fixed in HydrometServer
             //FixSiteID(svr, sc);  //. should be fixed in HydrometServer
 
-            SetSeriesPropertyBasedOnSiteCatalog(db);
+           // SetSeriesPropertyBasedOnSiteCatalog(db);
 
-         //   FixFolderStructure(db,sc);
+         FixFolderStructure(db,sc);
 
            //AssignProgramToInstant(db); // agrimet currently uses this to import
          
@@ -169,6 +169,9 @@ having count(*)>1";
                     continue;
                 }
 
+                if (!IsQualityParameter(tn.pcode))
+                    continue;
+
                     var myPath = sc.GetPath(row.id);
                     var myPathJoin = String.Join("/", myPath);
  
@@ -182,12 +185,12 @@ having count(*)>1";
                     if (myPathJoin != expectedPath)
                     {
                         Console.WriteLine(tn.pcode+": "+ myPathJoin+ " --> "+expectedPath );
-                        //.String.int id = sc.GetOrCreateFolder(path);
-                        //row.ParentID = id;
+                        var id = sc.GetOrCreateFolder(path);
+                        row.ParentID = id;
                     }
             }
 
-   //        db.Server.SaveTable(sc);
+           db.Server.SaveTable(sc);
 
         }
 

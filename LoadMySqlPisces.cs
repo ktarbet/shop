@@ -23,6 +23,11 @@ namespace Shop
         static void Main(string[] args)
         {
 
+            Reclamation.Core.Plink p = new Reclamation.Core.Plink();
+
+            
+            return;
+
             var svr_vm = MySqlServer.GetMySqlServer("vm", "timeseries");
             svr_vm.RunSqlCommand("truncate seriescatalog");
             svr_vm.RunSqlCommand("truncate sitecatalog");

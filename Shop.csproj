@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Shop.LoadMySqlPisces</StartupObject>
+    <StartupObject>Shop.CleanupSeriesCatalog</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoJSON.Net, Version=0.0.33.0, Culture=neutral, processorArchitecture=MSIL">
@@ -58,7 +58,7 @@
     <Compile Include="CleanupSeriesCatalog.cs" />
     <Compile Include="CompareToHydromet.cs" />
     <Compile Include="LoadMySqlPisces.cs" />
-    <Compile Include="OWRDInventoryHelper.cs" />
+    <Compile Include="Attic\OWRDInventoryHelper.cs" />
     <Compile Include="AddOWRDToPiscesAndDecodes.cs" />
     <Compile Include="PiscesSeriesLoader.cs" />
     <Compile Include="SetQualityLimits.cs" />

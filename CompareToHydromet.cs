@@ -17,6 +17,8 @@ namespace Shop
             PostgreSQL svr = new PostgreSQL(cs);
             TimeSeriesDatabase db = new TimeSeriesDatabase(svr);
 
+           // db.GetSeries(id);
+
 
         }
     }

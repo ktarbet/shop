@@ -3,6 +3,7 @@ using Reclamation.TimeSeries;
 using Reclamation.TimeSeries.Hydromet;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -18,19 +19,16 @@ namespace Shop
     /// Get Site catalog all public_visible....
     /// 
     /// </summary>
-    class LoadMySqlPisces
+    class CreatePNPisces
     {
         static void Main(string[] args)
         {
 
-            Reclamation.Core.Plink p = new Reclamation.Core.Plink();
-
             
-            return;
+            var fn = @"c:\temp\pn.pdb";
+            File.Delete(fn);
 
-            var svr_vm = MySqlServer.GetMySqlServer("vm", "timeseries");
-            svr_vm.RunSqlCommand("truncate seriescatalog");
-            svr_vm.RunSqlCommand("truncate sitecatalog");
+            var svr_vm = new SQLiteServer(fn);
 
             var db_vm = new TimeSeriesDatabase(svr_vm, Reclamation.TimeSeries.Parser.LookupOption.TableName);
             var sites_vm = db_vm.GetSiteCatalog();
@@ -44,8 +42,6 @@ namespace Shop
             var sc_vm = db_vm.GetSeriesCatalog();
 
             LoadDailyUsbrCatalog(sc, sc_vm,program);
-            //db_vm.Server.SaveTable(sc_vm);
-
             LoadUpperSnakeHydromet(sc_vm);
 
             db_vm.Server.SaveTable(sc_vm);
@@ -91,8 +87,6 @@ namespace Shop
         {
             for (int i = 0; i < sc.Rows.Count; i++)
             {
-                if (i == 55)
-                    return;
                 var row = sc[i];
                 string[] path = { "water.usbr.gov", "pn", program, row.siteid, "daily" };
                 var folderID = sc_vm.GetOrCreateFolder(path);

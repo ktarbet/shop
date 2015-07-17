@@ -35,16 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Shop.CreatePNPisces</StartupObject>
+    <StartupObject>CreateRFCList.CreateRFCList</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GeoJSON.Net, Version=0.0.33.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Pisces\packages\GeoJSON.Net.0.0.33\lib\GeoJSON.Net.dll</HintPath>
+    <Reference Include="GeoJSON.Net">
+      <HintPath>..\Pisces\packages\GeoJSON.Net.0.1.38\lib\GeoJSON.Net.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Pisces\packages\Newtonsoft.Json.6.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\Pisces\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -56,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MergePcodeFromPisces.cs" />
     <Compile Include="BillsKml.cs" />
     <Compile Include="CleanupSeriesCatalog.cs" />
     <Compile Include="CompareToHydromet.cs" />

@@ -31,13 +31,14 @@ $       RENAME/LOG custom$:[crohms.data]SUGS.CRO custom$:[crohms.data]*.SN1
 $       RENAME/LOG custom$:[crohms.data]WMCO.CRO custom$:[crohms.data]*.SN1
 $       COPY
             */
-            site = DataTableUtility.Select(site, @" (STATYPE = 'YAKR' or STATYPE = 'BURL'   
-            or STATYPE = 'UMAT'   
-            or STATYPE = 'YAKR'   
-            or STATYPE = 'ROGU'   
-            or STATYPE = 'WILM'   
-            or STATYPE = 'DESU'   
-            or STATYPE = 'FLAT')   
+            site = DataTableUtility.Select(site, @" (CATID = 'YAKR' or CATID = 'BURL'   
+            or CATID = 'UMAT'   
+            or CATID = 'YAKR'   
+            or CATID = 'ROGU'   
+            or CATID = 'WILM'   
+            or CATID = 'DESU'   
+            or CATID = 'BOIA'
+            or CATID = 'FLAT')   
             and CATID <> 'OFF' ", 
                                                      
                                                      "");

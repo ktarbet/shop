@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CreateRFCList.CreateRFCList</StartupObject>
+    <StartupObject>Shop.IdwrShifts</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoJSON.Net">
@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IdwrShifts.cs" />
     <Compile Include="MergePcodeFromPisces.cs" />
     <Compile Include="BillsKml.cs" />
     <Compile Include="CleanupSeriesCatalog.cs" />

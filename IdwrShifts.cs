@@ -13,9 +13,13 @@ namespace Shop
     {
 
         static void Main(string[] args)
+        
         {
 
-            
+
+// from        http://blog.codinghorror.com/cleaning-words-nasty-html/
+
+
             //if (args.Length == 0 || String.IsNullOrEmpty(args[0]))
             //{
             //    Console.WriteLine("No filename provided.");

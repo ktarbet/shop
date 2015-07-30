@@ -17,27 +17,30 @@ namespace Shop
         {
             /*
              cbtt	idwr_shift
-AFCI	yes
-BFCI	yes
-BMCI	yes
-CBCI	yes
-CRCI	yes
-ELCI	yes
-ENTI	yes
-GWCI	yes
-IDCI	yes
-LABI	yes
-MIII	yes
-NMCI	yes
-OSCI	yes
-PLCI	yes
-RECI	yes
-RSDI	yes
-SMCI	yes
-SNDI	yes
-TCNI	yes
-TRCI	yes
-WACI	yes
+AFCI
+BFCI
+BMCI
+CBCI
+CRCI
+ELCI
+ENTI
+GWCI
+IDCI
+LABI
+LPPI
+MIII
+NLCI
+NMCI
+OSCI
+PLCI
+RECI
+RSDI
+SMCI
+SNDI
+TCNI
+TRCI
+WACI
+
 
              */
 

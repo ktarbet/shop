@@ -54,6 +54,8 @@ WACI
             Console.WriteLine("input html is " + html.Length + " chars");
             html = Web.CleanHtml(html);
 
+            html = ConvertHtmlTableToCsv(html);
+
             var cleanFile = Path.Combine(tmpDir, "shifts.txt");
 
             // 
@@ -63,6 +65,16 @@ WACI
             Console.WriteLine("cleaned html is " + html.Length + " chars");
             Console.WriteLine(cleanFile);
 
+        }
+
+        private static string ConvertHtmlTableToCsv(string html)
+        {
+            RegexOptions o = RegexOptions.IgnoreCase | RegexOptions.Singleline | RegexOptions.IgnoreCase | RegexOptions.CultureInvariant;
+
+           // html = Regex.Replace(html,"<td></td>", ",", o);
+            html = html.Replace("<td></td>\r\n", ",");
+            html = html.Replace("<td></td>", ",");
+            return html;
         }
         
         

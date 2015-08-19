@@ -15,14 +15,14 @@ namespace Shop
          //   Console.WriteLine(DateTime.Now.Ticks);
 
            // Logger.EnableLogger();
-            var svr = PostgreSQL.GetPostgresServer("timeseries", "lrgs3");
+            var svr = PostgreSQL.GetPostgresServer("timeseries", "lrgs1");
             var db = new TimeSeriesDatabase(svr, Reclamation.TimeSeries.Parser.LookupOption.TableName);
 
 
             CheckForDuplicates(db);
             var sc = db.GetSeriesCatalog();
             //SortFoldersByName(db, "agrimet");
-           // SortFoldersByName(db, "hydromet");
+            SortFoldersByName(db, "hydromet");
 
            //RenameUntitled(svr, db);
            // FixBlankInterval(db); // should be fixed in HydrometServer

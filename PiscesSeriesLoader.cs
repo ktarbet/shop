@@ -10,7 +10,7 @@ namespace Shop
     class PiscesSeriesLoader
     {
 
-        PostgreSQL svr;
+        //PostgreSQL svr;
         TimeSeriesDatabase db;
         TimeSeriesDatabaseDataSet.SeriesCatalogDataTable seriesCatalog;
 

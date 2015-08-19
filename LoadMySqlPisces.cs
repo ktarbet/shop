@@ -22,9 +22,12 @@ namespace Shop
     {
         static void Main(string[] args)
         {
-
-            var svr_vm = MySqlServer.GetMySqlServer("vm", "timeseries");
-            svr_vm.RunSqlCommand("truncate seriescatalog");
+            var fn = @"C:\temp\pn.pdb";
+            //var svr_vm = MySqlServer.GetMySqlServer("vm", "timeseries");
+            var svr_vm = new SQLiteServer(fn); 
+            if( svr_vm.TableExists("seriescatalog"))
+              svr_vm.RunSqlCommand("truncate seriescatalog");
+            if (svr_vm.TableExists("sitescatalog"))
             svr_vm.RunSqlCommand("truncate sitecatalog");
 
             var db_vm = new TimeSeriesDatabase(svr_vm, Reclamation.TimeSeries.Parser.LookupOption.TableName);

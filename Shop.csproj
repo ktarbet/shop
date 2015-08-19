@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Shop.CleanupSeriesCatalog</StartupObject>
+    <StartupObject>Shop.UpdateWaterUsbr</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoJSON.Net, Version=0.0.33.0, Culture=neutral, processorArchitecture=MSIL">
@@ -57,6 +57,7 @@
     <Compile Include="BillsKml.cs" />
     <Compile Include="CleanupSeriesCatalog.cs" />
     <Compile Include="CompareToHydromet.cs" />
+    <Compile Include="UpdateWaterUsbr.cs" />
     <Compile Include="LoadMySqlPisces.cs" />
     <Compile Include="Attic\OWRDInventoryHelper.cs" />
     <Compile Include="AddOWRDToPiscesAndDecodes.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="SetSiteProperies.cs" />
     <Compile Include="SetupAgriMetMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleWebGet.cs" />
     <Compile Include="SnowCourse.cs" />
   </ItemGroup>
   <ItemGroup>

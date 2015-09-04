@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Shop.UpdateWaterUsbr</StartupObject>
+    <StartupObject>Shop.UpdateIDWRShifts</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoJSON.Net, Version=0.0.33.0, Culture=neutral, processorArchitecture=MSIL">
@@ -57,8 +57,8 @@
     <Compile Include="BillsKml.cs" />
     <Compile Include="CleanupSeriesCatalog.cs" />
     <Compile Include="CompareToHydromet.cs" />
+    <Compile Include="UpdateIDWRShifts.cs" />
     <Compile Include="UpdateWaterUsbr.cs" />
-    <Compile Include="LoadMySqlPisces.cs" />
     <Compile Include="Attic\OWRDInventoryHelper.cs" />
     <Compile Include="AddOWRDToPiscesAndDecodes.cs" />
     <Compile Include="PiscesSeriesLoader.cs" />

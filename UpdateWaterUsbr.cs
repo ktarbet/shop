@@ -19,9 +19,26 @@ namespace Shop
             Console.WriteLine("reading sitecatalog");
             var sites = db.GetSiteCatalog();
 
+            var sc = db.GetSeriesCatalog("isfolder=0");
+
+            var prop = db.GetSeriesProperties(true);
+            for (int i = 0; i < sc.Count; i++)
+            {
+                var s = db.GetSeries(sc[i].id);
+                var por = s.GetPeriodOfRecord();
+                
+               if(por.Count >0)
+               {
+                   s.Properties.Set("t1",por.T1.ToString("yyyy-MM-dd"));
+                   s.Properties.Set("t2",por.T2.ToString("yyyy-MM-dd"));
+                   Console.WriteLine(s.Name);
+               }
+            }
+
+            db.Server.SaveTable(prop);
 
             //SetRegioninSiteTable(db, sites);
-            UpdateGPSiteInfo(sites);
+           // UpdateGPSiteInfo(sites);
 
             svr.SaveTable(sites);
 

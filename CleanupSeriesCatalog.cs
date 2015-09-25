@@ -21,8 +21,8 @@ namespace Shop
 
             CheckForDuplicates(db);
             var sc = db.GetSeriesCatalog();
-            //SortFoldersByName(db, "agrimet");
-            SortFoldersByName(db, "hydromet");
+            SortFoldersByName(db, "agrimet");
+            //SortFoldersByName(db, "hydromet");
 
            //RenameUntitled(svr, db);
            // FixBlankInterval(db); // should be fixed in HydrometServer

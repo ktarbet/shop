@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Shop.UsgsWillacker</StartupObject>
+    <StartupObject>Shop.QuDependencies</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoJSON.Net, Version=0.0.33.0, Culture=neutral, processorArchitecture=MSIL">
@@ -57,9 +57,11 @@
     <Compile Include="Attic\BillsKml.cs" />
     <Compile Include="CleanupSeriesCatalog.cs" />
     <Compile Include="CompareToHydromet.cs" />
+    <Compile Include="QuDependencies.cs" />
+    <Compile Include="UpdateWaterUsbrGov.cs" />
     <Compile Include="UsgsWillacker.cs" />
     <Compile Include="UpdateIDWRShifts.cs" />
-    <Compile Include="UpdateWaterUsbr.cs" />
+    <Compile Include="LoadGrayLodge.cs" />
     <Compile Include="Attic\OWRDInventoryHelper.cs" />
     <Compile Include="Attic\AddOWRDToPiscesAndDecodes.cs" />
     <Compile Include="Attic\PiscesSeriesLoader.cs" />

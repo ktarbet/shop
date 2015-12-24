@@ -41,7 +41,7 @@ namespace Shop
             s.Name = "Flow";
             s.Table.TableName = "mpgraylodge_instant_rising_" + s.Name; ;
             s.Read();
-            db.AddSeries()
+           // db.AddSeries()
 
             svr.SaveTable(series);
 

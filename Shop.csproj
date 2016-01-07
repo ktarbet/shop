@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Shop.QuDependencies</StartupObject>
+    <StartupObject>Shop.CopyDatabase</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoJSON.Net, Version=0.0.33.0, Culture=neutral, processorArchitecture=MSIL">
@@ -58,6 +58,7 @@
     <Compile Include="CleanupSeriesCatalog.cs" />
     <Compile Include="CompareToHydromet.cs" />
     <Compile Include="QuDependencies.cs" />
+    <Compile Include="CopyDatabase.cs" />
     <Compile Include="UpdateWaterUsbrGov.cs" />
     <Compile Include="UsgsWillacker.cs" />
     <Compile Include="UpdateIDWRShifts.cs" />

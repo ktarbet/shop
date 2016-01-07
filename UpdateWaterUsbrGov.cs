@@ -14,7 +14,7 @@ namespace Shop
         {
 
             Console.WriteLine("connecting to database");
-            var svr = MySqlServer.GetMySqlServer("140.215.104.92", "timeseries", "");
+            var svr = MySqlServer.GetMySqlServer("test.water.usbr.gov", "timeseries", "");
             TimeSeriesDatabase db = new TimeSeriesDatabase(svr);
             Console.WriteLine("reading sitecatalog");
             var sites = db.GetSiteCatalog();

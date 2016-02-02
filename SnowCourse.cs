@@ -40,7 +40,7 @@ namespace Shop
                 {
                     sites.AddsitecatalogRow(cbtt, row["name"].ToString(), row["state"].ToString());
                 }
-                var monthlyFolder = db.GetOrCreateFolder(null, "hydromet", cbtt, "monthly");
+                var monthlyFolder = db.GetOrCreateFolder( "hydromet", cbtt, "monthly");
                 var m = new CalculationSeries(db);
                 m.Name = row["name"].ToString() + "  " + cbtt + "_su";
                 m.Table.TableName = "monthly_" + cbtt + "_" + row["type"].ToString();

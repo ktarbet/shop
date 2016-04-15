@@ -4,6 +4,7 @@ using Reclamation.Core;
 using Reclamation.TimeSeries.Hydromet;
 using System.IO;
 using System.Data;
+using System;
 using System.Text.RegularExpressions;
 using NPOI.SS.UserModel;
 using NPOI.POIFS.FileSystem;
@@ -15,12 +16,55 @@ namespace Shop
     {
         static void Main()
         {
+            // set the expectLength property in
 
-            string fn= @"c:\temp\ac_flow1.xls";
+            CsvFile csv = new CsvFile(@"c:\temp\site.csv", CsvFile.FieldTypes.AllText);
+            var cs = PostgreSQL.CreateADConnectionString("opendcs", "hydromet_opendcs");
 
-            var s = Reclamation.TimeSeries.Import.ImportRioGrandeExcel.ImportSpreadsheet(fn);
+            PostgreSQL svr = new PostgreSQL(cs);
 
-            s.WriteToConsole();
+            var platform = svr.Table("platform");
+            var platformproperty = svr.Table("platformproperty");
+
+            System.Console.WriteLine(platform.Rows.Count);
+            System.Console.WriteLine(platformproperty.Rows.Count);
+
+
+            for (int i = 0; i < csv.Rows.Count; i++)
+            {
+                var row = csv.Rows[i];
+                var site = row["site"].ToString();
+                var nessid = row["NESSID"].ToString();
+                var expectLength =  row["STMSGLEN"].ToString();
+
+                if (nessid.Trim() == "0" || nessid.Trim().Length <5)
+                    continue;
+                // find platform with platformdesignator= site
+
+                var rows = platform.Select("platformdesignator='" + site + "'");
+                if (rows.Length != 1)
+                {
+                    System.Console.WriteLine("skipping "+site);
+                    continue;
+                }
+
+                int id = Convert.ToInt32(rows[0]["id"]);
+
+                var x = platformproperty.Select("platformid = " + id + "and prop_name='expectLength' ");
+
+                Console.WriteLine(site+" "+expectLength);
+                if (x.Length == 1)
+                {// update existing
+                    x[0]["prop_value"] = expectLength;
+                }
+                else
+                {// add new row
+                    platformproperty.Rows.Add(id, "expectedLength", expectLength);
+                }
+
+            }
+             var j = svr.SaveTable(platformproperty);
+            Console.WriteLine(j+" rows saved");
 
         }
 
@@ -37,7 +81,7 @@ namespace Shop
             {
                 DataTableSeries s = new DataTableSeries(csv, TimeInterval.Irregular, "Date", csv.Columns[i].ColumnName);
                 s.Read();
-                merged.Add(Math.ShiftToYear(s,1995));
+                merged.Add(Reclamation.TimeSeries.Math.ShiftToYear(s,1995));
 
                 var daily = Reclamation.TimeSeries.Math.DailyAverage(s);
                 daily.Table.TableName = csv.Columns[i].ColumnName;
@@ -48,7 +92,7 @@ namespace Shop
             var scenarios = db.GetScenarios();
             for (int yr = 1949; yr < 2015; yr++)
             {
-                scenarios.AddScenarioRow(yr.ToString(), yr == 1949, yr.ToString());
+               // scenarios.AddScenarioRow(yr.ToString(), yr == 1949, yr.ToString());
             }
             db.Server.SaveTable(scenarios);
 

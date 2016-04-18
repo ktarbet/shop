@@ -59,7 +59,7 @@ namespace Shop
                 }
                 else
                 {// add new row
-                    platformproperty.Rows.Add(id, "expectedLength", expectLength);
+                    platformproperty.Rows.Add(id, "expectLength", expectLength);
                 }
 
             }

@@ -16,7 +16,13 @@ namespace Shop
     {
         static void Main()
         {
-            // set the expectLength property in
+            // test webserivce
+            var s = new Pisces.NunitTests.SeriesTypes.TestSnotel();
+            s.TestNrcsWebService();
+        }
+
+        private static void SetExpectedLength()
+        {
 
             CsvFile csv = new CsvFile(@"c:\temp\site.csv", CsvFile.FieldTypes.AllText);
             var cs = PostgreSQL.CreateADConnectionString("opendcs", "hydromet_opendcs");
@@ -35,16 +41,16 @@ namespace Shop
                 var row = csv.Rows[i];
                 var site = row["site"].ToString();
                 var nessid = row["NESSID"].ToString();
-                var expectLength =  row["STMSGLEN"].ToString();
+                var expectLength = row["STMSGLEN"].ToString();
 
-                if (nessid.Trim() == "0" || nessid.Trim().Length <5)
+                if (nessid.Trim() == "0" || nessid.Trim().Length < 5)
                     continue;
                 // find platform with platformdesignator= site
 
                 var rows = platform.Select("platformdesignator='" + site + "'");
                 if (rows.Length != 1)
                 {
-                    System.Console.WriteLine("skipping "+site);
+                    System.Console.WriteLine("skipping " + site);
                     continue;
                 }
 
@@ -52,7 +58,7 @@ namespace Shop
 
                 var x = platformproperty.Select("platformid = " + id + "and prop_name='expectLength' ");
 
-                Console.WriteLine(site+" "+expectLength);
+                Console.WriteLine(site + " " + expectLength);
                 if (x.Length == 1)
                 {// update existing
                     x[0]["prop_value"] = expectLength;
@@ -63,9 +69,8 @@ namespace Shop
                 }
 
             }
-             var j = svr.SaveTable(platformproperty);
-            Console.WriteLine(j+" rows saved");
-
+            var j = svr.SaveTable(platformproperty);
+            Console.WriteLine(j + " rows saved");
         }
 
         private static void ConvertToDailyAndSaveInDatabase()

@@ -1,2 +1,5 @@
 /bin/Debug
 /obj/Debug
+/obj
+/.vs/Shop/v15
+/packages

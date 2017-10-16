@@ -41,7 +41,7 @@ daily_bouy_pp
 
 
                 HydrometDailySeries lrgs = new HydrometDailySeries(cbtt, p, HydrometHost.PNLinux);
-                lrgs.Read(t, t);
+                lrgs.Read(t,t);
                 lrgs.WriteToConsole();
 
             }

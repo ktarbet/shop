@@ -32,17 +32,35 @@ daily_bouy_pp
                 string cbtt = tokens[1];
                 string p = tokens[2];
 
-                Console.WriteLine(cbtt +" " + p);
+               string  tag = cbtt +" " + p;
 
-                DateTime t = DateTime.Now.AddDays(-1).Date;
+                DateTime t1 = DateTime.Now.AddDays(-2).Date;
+                DateTime t2 = t1;
+
                 HydrometDailySeries hyd = new HydrometDailySeries(cbtt, p);
-                hyd.Read(t, t);
-                hyd.WriteToConsole();
-
+                hyd.Read(t1, t2);
+                hyd.RemoveMissing();
 
                 HydrometDailySeries lrgs = new HydrometDailySeries(cbtt, p, HydrometHost.PNLinux);
-                lrgs.Read(t,t);
-                lrgs.WriteToConsole();
+                lrgs.Read(t1,t2);
+                lrgs.RemoveMissing();
+
+                if( hyd.Count != lrgs.Count )
+                {
+                    Console.WriteLine(tag + ": hyd.Count = "+hyd.Count+"   linux.count ="+lrgs.Count );
+                }
+                else
+                if( hyd.Count == 1 && lrgs.Count == 1)
+                {// take difference
+                    var diff = hyd[0].Value - lrgs[0].Value;
+
+                    if( Math.Abs(diff) > 0.3)
+                    {
+                        Console.WriteLine(i+"," +tag+", "+ hyd[0].Value.ToString("F2")+",  "+lrgs[0].Value.ToString("F2")+", " + diff.ToString("F2"));
+                    }
+                }
+
+
 
             }
 

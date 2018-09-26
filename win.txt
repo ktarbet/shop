@@ -1,329 +1,242 @@
- 
-13:24:04.074 =====DSS===Debug: javaNativeInterface; Heclib_Hec_1zopen, Enter.  filename:  C:\project\heclib7-testing\JavaUnitTests\Solaris.dss
-13:24:04.074 =====DSS===Debug: zopen; Entering zopenExtended for file:  C:\project\heclib7-testing\JavaUnitTests\Solaris.dss
-13:24:04.074 =====DSS===Debug: zopen; Dss file version   0
-13:24:04.074 =====DSS===Debug: zinitIfltab; Completed ifltab Initialization 
-13:24:04.074 =====DSS===Debug: zopen; Entering for file:  C:\project\heclib7-testing\JavaUnitTests\Solaris.dss
-13:24:04.074 =====DSS===Debug: zopen; access: 3,  maxExpectedPathnames: 0,  hashSize: 0,  binSize: 0 
-13:24:04.074 =====DSS===Debug: zopen; Big Endian set to   0
-13:24:04.074 =====DSS===Debug: zopen; File does not exist; filename:  C:\project\heclib7-testing\JavaUnitTests\Solaris.dss
-13:24:04.075 =====DSS===Debug: zopen; Open status:  0;  Handle: 3
-13:24:04.075 =====DSS===Debug: zopen; Creating new DSS file,  File:   C:\project\heclib7-testing\JavaUnitTests\Solaris.dss
-13:24:04.075 =====DSS===Debug: zpermCreate; Enter 
-13:24:04.075 =====DSS===Debug: zcheckKeys; Enter 
-13:24:04.075 =====DSS===Debug: zcheckKeys; Exit, status:   0
-13:24:04.075 =====DSS===Debug: zmemoryGet; Enter, type:  DSS file header
-13:24:04.075 =====DSS===Debug: zmemoryGet; Size:   100
-13:24:04.075 =====DSS===Debug: zmemoryGet; Memory allocated at:   44338448
-13:24:04.075 =====DSS===Debug: znewFileSize; Max hash: 8192,  Bin size: 200 
-13:24:04.075 =====DSS===Debug: zpermCreate; Hash Size:  8192;     Bin Size: 200
-13:24:04.075 =====DSS===Debug: zmemoryGet; Enter, type:  Pathname bin
-13:24:04.075 =====DSS===Debug: zmemoryGet; Size:   200
-13:24:04.075 =====DSS===Debug: zmemoryGet; Memory allocated at:   44339344
-13:24:04.075 =====DSS===Debug: zmemoryGet; Enter, type:  Record header (info area)
-13:24:04.075 =====DSS===Debug: zmemoryGet; Size:   100
-13:24:04.075 =====DSS===Debug: zmemoryGet; Memory allocated at:   44399312
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zpermWrite; Write perm;  Handle:  3
-13:24:04.076 =====DSS===Debug: zpermWrite; Write perm;  Status:  0
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Address                    100, size: 3
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Space from EOF at address  100
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     100; end 102; wordSize: 2; ints 6; longs 3; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Address                    103, size: 25
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Space from EOF at address  103
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     103; end 127; wordSize: 2; ints 50; longs 25; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Address                    128, size: 25
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Space from EOF at address  128
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     128; end 152; wordSize: 2; ints 50; longs 25; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Address                    153, size: 25
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Space from EOF at address  153
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     153; end 177; wordSize: 2; ints 50; longs 25; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zpermCreate; Creating primary hash table 
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Address                    178, size: 8192
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Space from EOF at address  178
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     178; end 8369; wordSize: 2; ints 16384; longs 8192; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zpermCreate; Creating first reclaimed space table 
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Address                    8370, size: 1002
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Space from EOF at address  8370
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk ##JAVA## storing data...
-at address     8370; end 9371; wordSize: 2; ints 2004; longs 1002; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zpermCreate; Creating first bin set 
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Address                    9372, size: 6401
-13:24:04.076 =====DSS===Debug: zgetFileSpace; Space from EOF at address  9372
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     9372; end 15772; wordSize: 2; ints 12802; longs 6401; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zwriteEOF; Write EOF at address           15773
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     15773; end 15773; wordSize: 2; ints 2; longs 1; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zwriteDisk; Write to disk at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0. 
-13:24:04.076 =====DSS===Debug: zpermWrite; Write perm;  Handle:  3
-13:24:04.076 =====DSS===Debug: zpermWrite; Write perm;  Status:  0
-13:24:04.087 =====DSS===Debug: zflushToDisk; zflushToDisk handle:   3
-13:24:04.087 =====DSS===Debug: zflushToDisk; zflushToDisk status:   0
-13:24:04.087 =====DSS===Debug: zcheckKeys; Enter 
-13:24:04.087 =====DSS===Debug: zcheckKeys; Exit, status:   0
-13:24:04.087 =====DSS===Debug: zpermCreate; Exit, status:   0
-13:24:04.087 =====DSS===Debug: zopen; Successfully created file 
-13:24:04.087      -----DSS---zopen   New file opened,  File: C:\project\heclib7-testing\JavaUnitTests\Solaris.dss
-13:24:04.087                         Handle 3;  Process: 13932;  DSS Version:  7-GO
-13:24:04.087 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.087 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 0, Request to lock write word: 1 ,  Read access mode.
-13:24:04.087 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 2, word address: 128, number bytes: 8
-13:24:04.087 =====DSS===Debug: zlocking; File is Read Locked at address  128
-13:24:04.087                         Single-user advisory access mode
-13:24:04.087 =====DSS===Debug: zcheckKeys; Enter 
-13:24:04.087 =====DSS===Debug: zcheckKeys; Exit, status:   0
-13:24:04.087 =====DSS===Debug: javaNativeInterface;  Heclib_Hec_1zopen, exit status:   0
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Enter Hec_ztsStore; Pathname:  /Basin/Location/Flow//1Hour/Quality/
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; numberValues:   1
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; startTime:   57885120
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; endTime:   0
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; julianBaseDate:   0
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Computed time window does not exist; Input times 
-13:24:04.089 =====DSS===Debug: javaNativeInterface; startJulian-------->:   40198
-13:24:04.089 =====DSS===Debug: javaNativeInterface; startTimeSeconds--->:   0
-13:24:04.089 =====DSS===Debug: javaNativeInterface; endJulian---------->:   0
-13:24:04.089 =====DSS===Debug: javaNativeInterface; endTimeSeconds----->:   0
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Base date: 31DEC1899, (julian: 0) 
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Start date: 21JAN2010, (julian: 40198) 
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Start time: 00:00:00, (seconds: 0) 
-13:24:04.089 =====DSS===Debug: javaNativeInterface; End date:   31DEC1899, (julian: 0) 
-13:24:04.089 =====DSS===Debug: javaNativeInterface; End time:   00:00:00, (seconds: 0) 
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Time offset: 0 seconds 
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; storing location info 
-13:24:04.089 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; ready to store, storageFlag:   0
-13:24:04.089 
-13:24:04.089 =====DSS===Debug: ztsStore; Enter ztsStore; Pathname:  /Basin/Location/Flow//1Hour/Quality/
-13:24:04.089 =====DSS===Debug: ztsStore; storageFlag:   0
-13:24:04.089 =====DSS===Debug: ztsStore; Time window prior to processing:  
-13:24:04.089 =====DSS===Debug: ztsStore; Computed time window does not exist; Input times 
-13:24:04.089 =====DSS===Debug: ztsStore; startJulian-------->:   40198
-13:24:04.089 =====DSS===Debug: ztsStore; startTimeSeconds--->:   0
-13:24:04.089 =====DSS===Debug: ztsStore; endJulian---------->:   0
-13:24:04.089 =====DSS===Debug: ztsStore; endTimeSeconds----->:   0
-13:24:04.089 =====DSS===Debug: ztsStore; Base date: 31DEC1899, (julian: 0) 
-13:24:04.089 =====DSS===Debug: ztsStore; Start date: 21JAN2010, (julian: 40198) 
-13:24:04.089 =====DSS===Debug: ztsStore; Start time: 00:00:00, (seconds: 0) 
-13:24:04.089 =====DSS===Debug: ztsStore; End date:   31DEC1899, (julian: 0) 
-13:24:04.089 =====DSS===Debug: ztsStore; End time:   00:00:00, (seconds: 0) 
-13:24:04.089 =====DSS===Debug: ztsStore; Time offset: 0 seconds 
-13:24:04.089 Time window specified for record: /Basin/Location/Flow//1Hour/Quality/
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Computed time window 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; startJulian-------->:   40197
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; startTimeSeconds--->:   86400
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; endJulian---------->:   40197
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; endTimeSeconds----->:   86400
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Number Values------>:   1
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Base date: 31DEC1899, (julian: 0) 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Start date: 20JAN2010, (julian: 40197) 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Start time: 24:00:00, (seconds: 86400) 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; End date:   20JAN2010, (julian: 40197) 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; End time:   24:00:00, (seconds: 86400) 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Time offset: 0 seconds 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Number of values: 1 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Time interval: 3600 seconds 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Block size: 2 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Start block date: 01JAN2010, (julian: 40178) 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; End block date:   01JAN2010, (julian: 40178) 
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Internal startJulian-------->:   40197
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Internal startTimeSeconds--->:   86400
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Internal endJulian---------->:   40197
-13:24:04.089 =====DSS===Debug: ztsProcessTimes; Internal endTimeSeconds----->:   86400
-13:24:04.089 
-13:24:04.089 =====DSS===Debug: ztsStore; intervalType:   0
-13:24:04.089 =====DSS===Debug: ztsStore; storageFlag:   0
-13:24:04.089 =====DSS===Debug: ztsStore; storageFlag = 0:  Always replace data. 
-13:24:04.089 =====DSS===Debug: ztsStore; Float values provided. 
-13:24:04.089 =====DSS===Debug: zinquire; Request:  writ
-13:24:04.089 
-13:24:04.089 =====DSS===Debug: ztsStoreReg; Handle:   3
-13:24:04.089 =====DSS===Debug: ztsStoreReg; Pathname:  /Basin/Location/Flow//1Hour/Quality/
-13:24:04.089 =====DSS===Debug: ztsStoreReg; Storage Flag:   0
-13:24:04.089 =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
-13:24:04.089 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 0, level: 3, lock: 1:, flush: 1 
-13:24:04.089 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.089 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 0, Request to lock write word: 1 ,  Write access mode.
-13:24:04.089 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 2, word address: 103, number bytes: 8
-13:24:04.089 =====DSS===Debug: zlocking; File is Write Locked at address  103
-13:24:04.089 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.089 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 0, Request to lock write word: 2 ,  Write access mode.
-13:24:04.089 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
-13:24:04.089 =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
-13:24:04.089 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 2, word address: 100, number bytes: 8
-13:24:04.089 =====DSS===Debug: zlocking; attempt no-wait lock primary lock;  Handle:  3,  status: 0
-13:24:04.089 =====DSS===Debug: zlocking; File Locked;  Handle:  3
-13:24:04.089 =====DSS===Debug: zpermRead; Handle:   3
-13:24:04.089 =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
-13:24:04.089 =====DSS===Debug: zwriteDisk; Write process ID;  Handle:  3
-13:24:04.089 =====DSS===Debug: zwriteDisk; Process number:  13932
-13:24:04.089 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.089 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Read access mode.
-13:24:04.089 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 129, number bytes: 192
-13:24:04.089 =====DSS===Debug: zlocking; zlockPassive, no other process read locks found 
-13:24:04.089 =====DSS===Debug: zwriteDisk; Write to disk at address     153; end 177; wordSize: 2; ints 50; longs 25; handle 3; status 0. 
-13:24:04.089 =====DSS===Debug: zwriteDisk; zpidWrite;  Saved process id:   13932
-13:24:04.089 =====DSS===Debug: zwriteDisk; zpidWrite;  To address :   153
-13:24:04.089 =====DSS===Debug: zwriteDisk; zpidWrite;  Current PID list in file:  
-13:24:04.089 =====DSS===Debug: zwriteDisk; zpidWrite; PID:   30013932
-13:24:04.089 =====DSS===Debug: zlocking; Exit;  Handle   3;
-13:24:04.089 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 1 
-13:24:04.089 =====DSS===Debug: zlocking; File is Locked. 
-13:24:04.089 =====DSS===Debug: ztsStoreReg; Block date:   01Jan2010,  julian: 40178
-13:24:04.089 =====DSS===Debug: ztsStoreReg; blockPositionRelativeToStart:   479;  julianBlockDate: 40178;  tss->timeWindow->startJulian: 40197
-13:24:04.089 =====DSS===Debug: ztsStoreReg; Current position:   0;  values position: 0;  numberToStore: 1
-13:24:04.089 =====DSS===Debug: ztsStoreReg; numberInBlock:   744;  blockStartPosition: 479;  numberValues: 1;  numberLeft: 1
-13:24:04.089 =====DSS===Debug: ztsRegStoreBlock; Enter, Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.089 =====DSS===Debug: ztsRegStoreBlock; Number to store:   1
-13:24:04.089 =====DSS===Debug: ztsRegStoreBlock; Length data array:  1, Length quality flags: 1, length notes: 0,  length C notes: 0
-13:24:04.089 =====DSS===Debug: ztsRegStoreBlock; Time for first value:    20Jan2010  24:00:00  (40197, 86400)
-13:24:04.089 =====DSS===Debug: ztsRegStoreBlock; Time for last  value:    20Jan2010  24:00:00  (40197, 86400)
-13:24:04.089 =====DSS===Debug: zreadInfo; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zreadInfo; Handle:   3;
-13:24:04.090 =====DSS===Debug: zcheck; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zcheck; Handle:   3
-13:24:04.090 =====DSS===Debug: zcheckKeys; Enter 
-13:24:04.090 =====DSS===Debug: zcheckKeys; Exit, status:   0
-13:24:04.090 =====DSS===Debug: zcheckMultiUser; Handle:   3
-13:24:04.090 =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
-13:24:04.090 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.090 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
-13:24:04.090 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
-13:24:04.090 =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
-13:24:04.090 =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
-13:24:04.090 =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
-13:24:04.090 =====DSS===Debug: zhash; Enter; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zhash; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zhash; Table Hash:  1245,  Maximum Hash: 8192,  Bin Hash: -3604116558100795630
-13:24:04.090 =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
-13:24:04.090 =====DSS===Debug: zreadDisk; Physical read at address     1423; end 1423; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
-13:24:04.090 -----DSS--- zcheck; Record not found: /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zreadInfo; Exit; Record Not found:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: ztsRegReadBlock; Enter, Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: ztsRegReadBlock; Handle:  3;  Record Exists: 0,  Number to read: 744
-13:24:04.090 =====DSS===Debug: ztsWriteBlock; Enter,  handle:   3
-13:24:04.090 =====DSS===Debug: ztsWriteBlock; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: ztsWriteBlock; Values Compression:  1, Quality Compression: 1, Notes Compression: 0
-13:24:04.090 =====DSS===Debug: ztsWriteBlock; Number in:  1488,  Number Out: 6, Length Compression: 48
-13:24:04.090 =====DSS===Debug: zwriteInternal; Enter; handle:   3
-13:24:04.090 =====DSS===Debug: zwriteInternal; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zwriteInternal; Internal header:  21,  header2 48, User header 0
-13:24:04.090 =====DSS===Debug: zwriteInternal; Number Data Values:  744,  Logical Number Data: 744
-13:24:04.090 =====DSS===Debug: zwriteInternal; Size first data array:   6,  Size second data array: 0,  Size third data array: 0
-13:24:04.090 =====DSS===Debug: zwriteInternal; Total Allocated Space:    0
-13:24:04.090 =====DSS===Debug: zwriteInternal; Data type:  100,   File size: 15773
-13:24:04.090 =====DSS===Debug: zwriteInternal; Buffering set Off 
-13:24:04.090 =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
-13:24:04.090 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 1, lock: 1:, flush: 1 
-13:24:04.090 =====DSS===Debug: zlocking; returning; higher level controls.  This level:   1;  Higher Level: 3
-13:24:04.090 =====DSS===Debug: zreadInfo; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zreadInfo; Handle:   3;
-13:24:04.090 =====DSS===Debug: zcheck; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zcheck; Handle:   3
-13:24:04.090 =====DSS===Debug: zcheckKeys; Enter 
-13:24:04.090 =====DSS===Debug: zcheckKeys; Exit, status:   0
-13:24:04.090 =====DSS===Debug: zcheckMultiUser; Handle:   3
-13:24:04.090 =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
-13:24:04.090 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.090 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
-13:24:04.090 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
-13:24:04.090 =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
-13:24:04.090 =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
-13:24:04.090 =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
-13:24:04.090 =====DSS===Debug: zhash; Enter; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zhash; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zhash; Table Hash:  1245,  Maximum Hash: 8192,  Bin Hash: -3604116558100795630
-13:24:04.090 =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
-13:24:04.090 =====DSS===Debug: zreadDisk; Physical read at address     1423; end 1423; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
-13:24:04.090 -----DSS--- zcheck; Record not found: /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zreadInfo; Exit; Record Not found:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zwriteNew; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zwriteNew; Handle:   3;
-13:24:04.090 =====DSS===Debug: zwriteNew; Combined Long date:   172644800437509;  julianFirst: 40197, julianLas##JAVA ##stored data...
-t: 40197
-13:24:04.090 =====DSS===Debug: zbinNew; Enter 
-13:24:04.090 =====DSS===Debug: zbinNew; Exit 
-13:24:04.090 =====DSS===Debug: zwriteDisk; Write to disk at address     1423; end 1423; wordSize: 2; ints 2; longs 1; handle 3; status 0. 
-13:24:04.090 =====DSS===Debug: zwriteNew; Info block size:  36,  Total size needed: 74
-13:24:04.090 =====DSS===Debug: zgetFileSpace; Address                    15773, size: 74
-13:24:04.090 =====DSS===Debug: zgetFileSpace; Space from EOF at address  15773
-13:24:04.090 =====DSS===Debug: zbinUpdate; Enter;  Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zbinUpdate; Bypass pathname bin read for address:  9372,  size: 200
-13:24:04.090 =====DSS===Debug: zbinUpdate; Bin space available at address:  9372,  Specific address: 9372, (count: 0)
-13:24:04.090 =====DSS===Debug: zwriteDisk; Write to disk at address     9372; end 9571; wordSize: 2; ints 400; longs 200; handle 3; status 0. 
-13:24:04.090 =====DSS===Debug: zbinUpdate; Exit;   Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zwriteDisk; Write to disk at address     15773; end 15808; wordSize: 2; ints 72; longs 36; handle 3; status 0. 
-13:24:04.090 =====DSS===Debug: zwriteNew; Exit; Info address:  15773; First Data Address 15844; Data Type 100
-13:24:04.090 =====DSS===Debug: zwriteInternal; Writing internal header array 
-13:24:04.090 =====DSS===Debug: zwriteDisk; Write to disk at address     15809; end 15819; wordSize: 1; ints 21; longs 11; handle 3; status 0. 
-13:24:04.090 =====DSS===Debug: zwriteInternal; Writing second header array 
-13:24:04.090 =====DSS===Debug: zwriteDisk; Write to disk at address     15820; end 15843; wordSize: 1; ints 48; longs 24; handle 3; status 0. 
-13:24:04.090 =====DSS===Debug: zwriteInternal; Writing first data values array 
-13:24:04.090 =====DSS===Debug: zwriteDisk; Write to disk at address     15844; end 15846; wordSize: 1; ints 6; longs 3; handle 3; status 0. 
-13:24:04.090 =====DSS===Debug: zwriteEOF; Write EOF and flush at         15847
-13:24:04.090 =====DSS===Debug: zwriteDisk; Write to disk at address     15847; end 15847; wordSize: 1; ints 2; longs 1; handle 3; status 0. 
-13:24:04.090 =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
-13:24:04.090 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 1, lock: 0:, flush: 1 
-13:24:04.090 =====DSS===Debug: zlocking; returning; higher level controls.  This level:   1;  Higher Level: 3
-13:24:04.090 -----DSS--- zwrite  Handle 3;  Version 1:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
-13:24:04.090 =====DSS===Debug: zwriteInternal; Table Hash:  1423, Path bin: 9372, Info block: 15773, Data Array: 15844
-13:24:04.090 =====DSS===Debug: zwriteInternal; Size internal header:  21, Size compression header: 48
-13:24:04.090 =====DSS===Debug: zwriteInternal; Size first data array:  6, Size second data array: 0
-13:24:04.090 =====DSS===Debug: zwriteInternal; Exit 
-13:24:04.090 =====DSS===Debug: zcheckKeys; Enter 
-13:24:04.090 =====DSS===Debug: zcheckKeys; Exit, status:   0
-13:24:04.090 =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
-13:24:04.090 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 3, lock: 0:, flush: 1 
-13:24:04.090 =====DSS===Debug: zwriteDisk; Write to disk at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0. 
-13:24:04.090 =====DSS===Debug: zpermWrite; Write perm;  Handle:  3
-13:24:04.090 =====DSS===Debug: zpermWrite; Write perm;  Status:  0
-13:24:04.090 =====DSS===Debug: zlocking; Exit;  Handle   3;
-13:24:04.090 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 0 
-13:24:04.090 =====DSS===Debug: zlocking; File is Locked. 
-13:24:04.090 =====DSS===Debug: ztsStoreReg; Exit, Pathname:  /Basin/Location/Flow//1Hour/Quality/
-13:24:04.090 =====DSS===Debug: ztsStore; Exit ztsStore; Pathname:  /Basin/Location/Flow//1Hour/Quality/
-13:24:04.090 =====DSS===Debug: ztsStore; Status:   0
-13:24:04.090 
-13:24:04.090 =====DSS===Debug: javaNativeInterface; Exit Hec_ztsStore.  Status:   0
-13:24:04.091 =====DSS===Debug: javaNativeInterface; Heclib_Hec_1zclose, Enter; handle:   3
-13:24:04.091 =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
-13:24:04.091 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 1, lock: 1:, flush: 1 
-13:24:04.091 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.091 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
-13:24:04.091 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
-13:24:04.091 =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
-13:24:04.091 =====DSS===Debug: zlocking; Exit;  Handle   3;
-13:24:04.091 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 1 
-13:24:04.091 =====DSS===Debug: zlocking; File is Locked. 
-13:24:04.091 =====DSS===Debug: zwriteDisk; Write to disk at address     153; end 153; wordSize: 2; ints 2; longs 1; handle 3; status 0. 
-13:24:04.091 =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
-13:24:04.091 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 4, lock: 0:, flush: 1 
-13:24:04.091 =====DSS===Debug: zwriteDisk; Write to disk at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0. 
-13:24:04.091 =====DSS===Debug: zpermWrite; Write perm;  Handle:  3
-13:24:04.091 =====DSS===Debug: zpermWrite; Write perm;  Status:  0
-13:24:04.091 =====DSS===Debug: zlocking; Exit;  Handle   3;
-13:24:04.091 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 0 
-13:24:04.091 =====DSS===Debug: zlocking; File is Locked. 
-13:24:04.091 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.091 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 0 ,  Write access mode.
-13:24:04.091 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 0, word address: 103, number bytes: 8
-13:24:04.091 =====DSS===Debug: zlocking; File Write Lock is Unlocked. 
-13:24:04.091 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
-13:24:04.091 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 0 ,  Read access mode.
-13:24:04.091 =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 0, word address: 128, number bytes: 8
-13:24:04.091 =====DSS===Debug: zlocking; File Read Lock is Unlocked. 
-13:24:04.091      -----DSS---zclose  Handle 3;  Process: 13932;  File: C:\project\heclib7-testing\JavaUnitTests\Solaris.dss
-13:24:04.091                         Number records:         1
-13:24:04.091                         File size:              15847  64-bit words
-13:24:04.091                         File size:              123 Kb;  0 Mb
-13:24:04.091                         Dead space:             0
-13:24:04.091                         Hash range:             8192
-13:24:04.091                         Number hash used:       1
-13:24:04.091                         Max paths for hash:     1
-13:24:04.091                         Corresponding hash:     1245
-13:24:04.091                         Number non unique hash: 0
-13:24:04.091                         Number bins used:       1
-13:24:04.091                         Number overflow bins:   0
-13:24:04.092                         Number physical reads:  3
-13:24:04.092                         Number physical writes: 21
-13:24:04.092                         Number denied locks:    0
-13:24:04.092 =====DSS===Debug: zmemoryFree; Free pathname bin memory;  Handle:  3;  Memory location: 2a49080
-13:24:04.092 =====DSS===Debug: zmemoryFree; Free record header memory;  Handle:  3;  Memory location: 2a57ac0
-13:24:04.092 =====DSS===Debug: zmemoryFree; Free main file header memory;  Handle:  3;  Memory location: 2a48d00
+##C## inside zinit()
+<<<<<<<<<<<<< startTime = 57885120
+##JAVA## storing data...
+##Java## HecDSSFileData.open(fileMustExist=true, dssVersion=0)
+before Heclib.zopen
+DSSTable[0] = 0
+DSSTable[1] = 0
+DSSTable[2] = 0
+DSSTable[3] = 0
+DSSTable[4] = 0
+
+##C## Inside Java_hec_heclib_util_Heclib_Hec_1zopen
+##C## /wm/perforce/karl/heclib7-testing/Java/Sample7.dss
+length = 800
+##C##  status = 0
+##C##  ifltab = 0
+##C# (input) ifltab[0] = 0
+##C# (input) ifltab[1] = 0
+##C# (input) ifltab[2] = 0
+##C# (input) ifltab[3] = 0  20:22:30.359 =====DSS===Debug: javaNativeInterface; Heclib_Hec_1zopen, Enter.  filename:  /wm/perforce/karl/heclib7-testing/Java/Sample7.dss
+
+##C## calling zopen
+ Hi from zopen()...
+
+  in zopen (16) ifltab[0] = 0
+  in zopen (16) ifltab[1] = 0
+  in zopen (16) ifltab[2] = 0
+  in zopen (16) ifltab[3] = 0
+  in zopen (16) ifltab[4] = 020:22:30.360 =====DSS===Debug: zopen; Entering zopenExtended for file:  /wm/perforce/karl/heclib7-testing/Java/Sample7.dss
+20:22:30.360 =====DSS===Debug: zopen; Dss file version   7
+##C## in zopenInternal(a)
+##C## in zinitIfltab20:22:30.360 =====DSS===Debug: zinitIfltab; Completed ifltab Initialization
+
+##C##  in zopenInternal (b) status = 0
+  in zopenInternal (b.1) ifltab[0] = 7
+  in zopenInternal (b.1) ifltab[1] = 0
+  in zopenInternal (b.1) ifltab[2] = 13579
+  in zopenInternal (b.1) ifltab[3] = 0
+  in zopenInternal (b.1) ifltab[4] = 3
+##C## in zopenInternal (d) status = 0
+##C## in zopenInternal (e) access = 0
+##C## in zopenInternal (g) modify -- access = 320:22:30.360 =====DSS===Debug: zopen; Entering for file:  /wm/perforce/karl/heclib7-testing/Java/Sample7.dss
+20:22:30.360 =====DSS===Debug: zopen; access: 3,  maxExpectedPathnames: 0,  hashSize: 0,  binSize: 0
+20:22:30.360 =====DSS===Debug: zopen; Big Endian set to   1
+20:22:30.360 =====DSS===Debug: zopen; File exists; filename:  /wm/perforce/karl/heclib7-testing/Java/Sample7.dss
+
+  in zopenInternal (189) ifltab[0] = 7
+  in zopenInternal (189) ifltab[1] = 0
+  in zopenInternal (189) ifltab[2] = 13579
+  in zopenInternal (189) ifltab[3] = 0
+  in zopenInternal (189) ifltab[4] = 3
+  in zopenInternal (193) ifltab[0] = 7
+  in zopenInternal (193) ifltab[1] = 0
+  in zopenInternal (193) ifltab[2] = 13579
+  in zopenInternal (193) ifltab[3] = 0
+  in zopenInternal (193) ifltab[4] = 3
+  in zopenInternal (195) access = 320:22:30.361 =====DSS===Debug: zopen; Open status:  0;  Handle: 11
+20:22:30.361 =====DSS===Debug: zpermRead; Handle:   11
+20:22:30.361 =====DSS===Debug: zmemoryGet; Enter, type:  DSS file header
+20:22:30.361 =====DSS===Debug: zmemoryGet; Size:   100
+20:22:30.361 =====DSS===Debug: zmemoryGet; Memory allocated at:   4300470832
+20:22:30.361 =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 11; status 0.
+20:22:30.361 =====DSS===Debug: zmemoryGet; Enter, type:  Pathname bin
+20:22:30.361 =====DSS===Debug: zmemoryGet; Size:   200
+20:22:30.361 =====DSS===Debug: zmemoryGet; Memory allocated at:   4300478992
+20:22:30.361 =====DSS===Debug: zmemoryGet; Enter, type:  Record header (info area)
+20:22:30.361 =====DSS===Debug: zmemoryGet; Size:   100
+20:22:30.361 =====DSS===Debug: zmemoryGet; Memory allocated at:   4300480640
+20:22:30.361      -----DSS---zopen   Existing file opened,  File: /wm/perforce/karl/heclib7-testing/Java/Sample7.dss
+20:22:30.361                         Handle 11;  Process: 27644;  DSS Versions - Software: 7-GO, File:  7-GO
+20:22:30.361 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   11;
+20:22:30.361 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 0, Request to lock write word: 1 ,  Read access mode.
+20:22:30.367 =====DSS===Debug: zlocking; File is Read Locked at address  128
+20:22:30.367                         Single-user advisory access mode
+20:22:30.367 =====DSS===Debug: zcheckKeys; Enter
+20:22:30.367 =====DSS===Debug: zcheckKeys; Exit, status:   0
+
+ wrapping up in zopenInternal
+  in zopenInternal (end) ifltab[0] = 7
+  in zopenInternal (end) ifltab[1] = 11
+  in zopenInternal (end) ifltab[2] = 13579
+  in zopenInternal (end) ifltab[3] = 100
+  in zopenInternal (end) ifltab[4] = 3
+ zopen in zopen (end) ifltab[0] = 7
+ zopen in zopen (end) ifltab[1] = 11
+ zopen in zopen (end) ifltab[2] = 13579
+ zopen in zopen (end) ifltab[3] = 100
+ zopen in zopen (end) ifltab[4] = 3
+##C## zopen returned status = 0
+20:22:30.367 =====DSS===Debug: javaNativeInterface;  Heclib_Hec_1zopen, exit status:   0
+
+##C# (output) ifltab[0] = 7
+##C# (output) ifltab[1] = 11
+##C# (output) ifltab[2] = 13579
+##C# (output) ifltab[3] = 100##Java## after call to zopen
+##Java## status[0] = 0
+DSSTable[0] = 0
+DSSTable[1] = 7
+DSSTable[2] = 0
+DSSTable[3] = 11
+DSSTable[4] = 0
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Hec_zinqir; param:  VERS
+20:22:30.368 =====DSS===Debug: zinquire; Request:  vers
+20:22:30.368 =====DSS===Debug: zinquire; creturn:  7-GO
+20:22:30.368 =====DSS===Debug: zinquire; number:   7
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Hec_zinqir vers 7 return; alpha:  7-GO
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Hec_zinqir return; number:   7
+##Java## HecDSSFileData.dssVersion = 7
+
+Inside Hec_ztsStore(..
+Inside Hec_ztsStore(2
+Inside Hec_ztsStore(2.1)
+j_ifltab 784ff618
+
+Inside Hec_ztsStore(320:22:30.368 =====DSS===Debug: javaNativeInterface; Enter Hec_ztsStore; Pathname:  /Basin/Location/Flow//1Hour/Quality/
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; numberValues:   1
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; startTime:   57885120
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; endTime:   0
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; julianBaseDate:   0
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Computed time window does not exist; Input times
+20:22:30.368 =====DSS===Debug: javaNativeInterface; startJulian-------->:   40198
+20:22:30.368 =====DSS===Debug: javaNativeInterface; startTimeSeconds--->:   0
+20:22:30.368 =====DSS===Debug: javaNativeInterface; endJulian---------->:   0
+20:22:30.368 =====DSS===Debug: javaNativeInterface; endTimeSeconds----->:   0
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Base date: 31DEC1899, (julian: 0)
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Start date: 21JAN2010, (julian: 40198)
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Start time: 00:00:00, (seconds: 0)
+20:22:30.368 =====DSS===Debug: javaNativeInterface; End date:   31DEC1899, (julian: 0)
+20:22:30.368 =====DSS===Debug: javaNativeInterface; End time:   00:00:00, (seconds: 0)
+20:22:30.368 =====DSS===Debug: javaNativeInterface; Time offset: 0 seconds
+20:22:30.369 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; storing location info
+20:22:30.369 =====DSS===Debug: javaNativeInterface; Hec_ztsStore; ready to store, storageFlag:   0
+20:22:30.369
+20:22:30.369 =====DSS===Debug: ztsStore; Enter ztsStore; Pathname:  /Basin/Location/Flow//1Hour/Quality/
+20:22:30.369 =====DSS===Debug: ztsStore; storageFlag:   0
+20:22:30.369 =====DSS===Debug: ztsStore; Time window prior to processing:
+20:22:30.369 =====DSS===Debug: ztsStore; Computed time window does not exist; Input times
+20:22:30.369 =====DSS===Debug: ztsStore; startJulian-------->:   40198
+20:22:30.369 =====DSS===Debug: ztsStore; startTimeSeconds--->:   0
+20:22:30.369 =====DSS===Debug: ztsStore; endJulian---------->:   0
+20:22:30.369 =====DSS===Debug: ztsStore; endTimeSeconds----->:   0
+20:22:30.369 =====DSS===Debug: ztsStore; Base date: 31DEC1899, (julian: 0)
+20:22:30.369 =====DSS===Debug: ztsStore; Start date: 21JAN2010, (julian: 40198)
+20:22:30.369 =====DSS===Debug: ztsStore; Start time: 00:00:00, (seconds: 0)
+20:22:30.369 =====DSS===Debug: ztsStore; End date:   31DEC1899, (julian: 0)
+20:22:30.369 =====DSS===Debug: ztsStore; End time:   00:00:00, (seconds: 0)
+20:22:30.369 =====DSS===Debug: ztsStore; Time offset: 0 seconds
+20:22:30.369 Time window specified for record: /Basin/Location/Flow//1Hour/Quality/
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Computed time window
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; startJulian-------->:   40197
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; startTimeSeconds--->:   86400
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; endJulian---------->:   40197
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; endTimeSeconds----->:   86400
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Number Values------>:   1
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Base date: 31DEC1899, (julian: 0)
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Start date: 20JAN2010, (julian: 40197)
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Start time: 24:00:00, (seconds: 86400)
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; End date:   20JAN2010, (julian: 40197)
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; End time:   24:00:00, (seconds: 86400)
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Time offset: 0 seconds
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Number of values: 1
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Time interval: 3600 seconds
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Block size: 2
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Start block date: 01JAN2010, (julian: 40178)
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; End block date:   01JAN2010, (julian: 40178)
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Internal startJulian-------->:   40197
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Internal startTimeSeconds--->:   86400
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Internal endJulian---------->:   40197
+20:22:30.369 =====DSS===Debug: ztsProcessTimes; Internal endTimeSeconds----->:   86400
+20:22:30.369
+20:22:30.369 =====DSS===Debug: ztsStore; intervalType:   0
+20:22:30.369 =====DSS===Debug: ztsStore; storageFlag:   0
+20:22:30.369 =====DSS===Debug: ztsStore; storageFlag = 0:  Always replace data.
+20:22:30.369 =====DSS===Debug: ztsStore; Float values provided.
+20:22:30.369 =====DSS===Debug: zinquire; Request:  writ
+20:22:30.369
+20:22:30.369 =====DSS===Debug: ztsStoreReg; Handle:   11
+20:22:30.369 =====DSS===Debug: ztsStoreReg; Pathname:  /Basin/Location/Flow//1Hour/Quality/
+20:22:30.369 =====DSS===Debug: ztsStoreReg; Storage Flag:   0
+20:22:30.369 =====DSS===Debug: zlocking; Enter active lock;  Handle   11;
+20:22:30.369 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 0, level: 3, lock: 1:, flush: 1
+20:22:30.369 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   11;
+20:22:30.369 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 0, Request to lock write word: 1 ,  Write access mode.
+20:22:30.370 =====DSS===Debug: zlocking; File is Write Locked at address  103
+20:22:30.370 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   11;
+20:22:30.370 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 0, Request to lock write word: 2 ,  Write access mode.
+20:22:30.371 =====DSS===Debug: zlocking; zlockPassive, no other process write locks found
+20:22:30.372 =====DSS===Debug: zlocking; attempt no-wait lock primary lock;  Handle:  11,  status: 0
+20:22:30.372 =====DSS===Debug: zlocking; File Locked;  Handle:  11
+20:22:30.372 =====DSS===Debug: zpermRead; Handle:   11
+20:22:30.373 =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 11; status 0.
+20:22:30.373 =====DSS===Debug: zwriteDisk; Write process ID;  Handle:  11
+20:22:30.373 =====DSS===Debug: zwriteDisk; Process number:  27644
+20:22:30.373 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   11;
+20:22:30.373 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Read access mode.
+20:22:30.374 =====DSS===Debug: zlocking; zlockPassive, no other process read locks found
+20:22:30.375 =====DSS===Debug: zwriteDisk; Write to disk at address     153; end 177; wordSize: 2; ints 50; longs 25; handle 11; status 0.
+20:22:30.375 =====DSS===Debug: zwriteDisk; zpidWrite;  Saved process id:   27644
+20:22:30.375 =====DSS===Debug: zwriteDisk; zpidWrite;  To address :   153
+20:22:30.375 =====DSS===Debug: zwriteDisk; zpidWrite;  Current PID list in file:
+20:22:30.375 =====DSS===Debug: zwriteDisk; zpidWrite; PID:   30027644
+20:22:30.375 =====DSS===Debug: zlocking; Exit;  Handle   11;
+20:22:30.375 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 1
+20:22:30.375 =====DSS===Debug: zlocking; File is Locked.
+20:22:30.375 =====DSS===Debug: ztsStoreReg; Block date:   01Jan2010,  julian: 40178
+20:22:30.375 =====DSS===Debug: ztsStoreReg; blockPositionRelativeToStart:   479;  julianBlockDate: 40178;  tss->timeWindow->startJulian: 40197
+20:22:30.375 =====DSS===Debug: ztsStoreReg; Current position:   0;  values position: 0;  numberToStore: 1
+20:22:30.375 =====DSS===Debug: ztsStoreReg; numberInBlock:   744;  blockStartPosition: 479;  numberValues: 1;  numberLeft: 1
+20:22:30.375 =====DSS===Debug: ztsRegStoreBlock; Enter, Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.375 =====DSS===Debug: ztsRegStoreBlock; Number to store:   1
+20:22:30.375 =====DSS===Debug: ztsRegStoreBlock; Length data array:  1, Length quality flags: 1, length notes: 0,  length C notes: 0
+20:22:30.375 =====DSS===Debug: ztsRegStoreBlock; Time for first value:    20Jan2010  24:00:00  (40197, 86400)
+20:22:30.375 =====DSS===Debug: ztsRegStoreBlock; Time for last  value:    20Jan2010  24:00:00  (40197, 86400)
+20:22:30.375 =====DSS===Debug: zreadInfo; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.375 =====DSS===Debug: zreadInfo; Handle:   11;
+20:22:30.375 =====DSS===Debug: zcheck; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.375 =====DSS===Debug: zcheck; Handle:   11
+20:22:30.375 =====DSS===Debug: zcheckKeys; Enter
+20:22:30.375 =====DSS===Debug: zcheckKeys; Exit, status:   0
+20:22:30.375 =====DSS===Debug: zcheckMultiUser; Handle:   11
+20:22:30.375 =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+20:22:30.375 =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   11;
+20:22:30.375 =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+20:22:30.378 =====DSS===Debug: zlocking; zlockPassive, no other process write locks found
+20:22:30.378 =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  11;
+20:22:30.378 =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+20:22:30.378 =====DSS===Debug: zhash; Enter; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.378 =====DSS===Debug: zhash; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.378 =====DSS===Debug: zhash; Table Hash:  1245,  Maximum Hash: 8192,  Bin Hash: -3604116558100795630
+20:22:30.378 =====DSS===Debug: zcheck; Record not previously checked; Searching file for record
+20:22:30.378 =====DSS===Debug: zreadDisk; Physical read at address     1423; end 1423; wordSize: 2; ints 2; longs 1; handle 11; status 0.
+20:22:30.378 -----DSS--- zcheck; Record not found: /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.378 =====DSS===Debug: zreadInfo; Exit; Record Not found:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.378 =====DSS===Debug: ztsRegReadBlock; Enter, Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.378 =====DSS===Debug: ztsRegReadBlock; Handle:  11;  Record Exists: 0,  Number to read: 744
+20:22:30.378 =====DSS===Debug: ztsWriteBlock; Enter,  handle:   11
+20:22:30.378 =====DSS===Debug: ztsWriteBlock; Pathname:  /Basin/Location/Flow/01Jan2010/1Hour/Quality/
+20:22:30.379 =====DSS===Debug: ztsWriteBlock; Values Compression:  1, Quality Compression: 1, Notes Compression: 0
+20:22:30.379 =====DSS===Debug: ztsWriteBlock; Number in:  1488,  Number Out: 6, Length Compression: 48
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#

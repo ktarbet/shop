@@ -1,0 +1,2366 @@
+..\..\test-data\sample.dss
+..\..\test-data\sample6.dss
+..\..\test-data\sample7.dss
+        3 file(s) copied.
+ Volume in drive C is OS
+ Volume Serial Number is C03C-614D
+
+ Directory of C:\project\heclib\test\bin
+
+03/04/2019  01:26 PM    <DIR>          .
+03/04/2019  01:26 PM    <DIR>          ..
+02/12/2019  09:37 AM         1,651,712 sample.dss
+02/12/2019  09:37 AM         1,651,712 sample6.dss
+02/12/2019  09:37 AM         1,415,680 sample7.dss
+               3 File(s)      4,719,104 bytes
+               2 Dir(s)  431,167,303,680 bytes free
+C:\project\heclib\test\bin
+ 
+      -----DSS---zopen   New file opened,  File: C:\project\heclib\test\bin\testDss7.dss
+                         Handle 3;  Process: 1900;  DSS Version:  7-HC
+                         Single-user advisory access mode
+ -----DSS--- zdelete  Record does not exist.  Handle 3;  Pathname: /a/b/Temperature-Depth/20Jun2020/~1Day/Irregular Float Profile Test/
+ -----DSS--- zdelete  Record does not exist.  Handle 3;  Pathname: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ -----DSS--- zwrite  Handle 3;  Version 2:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Handle 3;  Version 2:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ 
+ =====DSS===Debug: ztsRetrieve; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   0
+ =====DSS===Debug: ztsRetrieve; retrieveDoublesFlag:   2
+ =====DSS===Debug: ztsRetrieve; boolRetrieveQualityNotes:   1
+ =====DSS===Debug: ztsRetrieve; Time window prior to processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window does not exist; Input times 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 07JUN1968, (julian: 24995) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 07JUN1968, (julian: 24995) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1971, (julian: 25933) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieve; intervalType:   1
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   0
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 0:  Adhere to time window provided. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 1:  Retrieve one value previous to start of time window. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 2:  Retrieve one value after end of time window. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 3:  Retrieve one value before and one value after time window. 
+ 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 07JUN1968, (julian: 24995) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1971, (julian: 25933) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieveIrreg; Handle:   3
+ =====DSS===Debug: ztsRetrieveIrreg; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Enter ztsGetSizesInternal, Pathname:  /a/b/Temperature-Depth/01JAN1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2934,  Maximum Hash: 8192,  Bin Hash: 4506889532711844744
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3112; end 3112; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10172; end 10371; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10172, Specific bin address: 10172
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   47321
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47321; end 47359; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  47321; Info size 39; Data Type 117; Version 2
+ =====DSS===Debug: zreadDisk; Physical read at address     47360; end 47373; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2918,  Maximum Hash: 8192,  Bin Hash: 2874299970382059559
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3096; end 3096; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10372; end 10571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10372, Specific bin address: 10372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   30762
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30762; end 30800; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  30762; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     30801; end 30814; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7158,  Maximum Hash: 8192,  Bin Hash: 3850817746545888721
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7336; end 7336; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10572; end 10771; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10572, Specific bin address: 10572
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   38318
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38318; end 38356; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  38318; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     38357; end 38370; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7142,  Maximum Hash: 8192,  Bin Hash: 2218228184216103536
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7320; end 7320; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10772; end 10971; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10772, Specific bin address: 10772
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   45874
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45874; end 45912; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  45874; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     45913; end 45926; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit ztsGetSizesInternal, Status:   0
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1968,  julian: 24837
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 1005
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2934,  Maximum Hash: 8192,  Bin Hash: 4506889532711844744
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3112; end 3112; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10172; end 10371; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10172, Specific bin address: 10172
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   47321
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47321; end 47359; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  47321; Info size 39; Data Type 117; Version 2
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47360; end 47373; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     47374; end 51637; wordSize: 1; ints 8528; longs 4264; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     51638; end 51657; wordSize: 1; ints 40; longs 20; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 2:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  3112, Path bin: 10172, Info block: 47321, Data Array: 47374
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  8528, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   1005
+ =====DSS===Debug: ztsDisaggregate; numberStored:   208
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   1005
+ =====DSS===Debug: ztsDisaggregate; numberStored:   208
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   8528
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   208
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   208
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   208
+ =====DSS===Debug: ztsDisaggregate; numberValues:   208
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   8320
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   208
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  1005, Number stored: 208, Number Expanded: 208
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  8320, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   208,  Current total: 208, julian Block date: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1969,  julian: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 797
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2918,  Maximum Hash: 8192,  Bin Hash: 2874299970382059559
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3096; end 3096; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10372; end 10571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10372, Specific bin address: 10372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   30762
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30762; end 30800; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  30762; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30801; end 30814; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     30815; end 38297; wordSize: 1; ints 14966; longs 7483; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  3096, Path bin: 10372, Info block: 30762, Data Array: 30815
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  14966, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   797
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   797
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   14966
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   14600
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  797, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  14600, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   365,  Current total: 573, julian Block date: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1970,  julian: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 432
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7158,  Maximum Hash: 8192,  Bin Hash: 3850817746545888721
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7336; end 7336; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10572; end 10771; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10572, Specific bin address: 10572
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   38318
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38318; end 38356; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  38318; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38357; end 38370; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     38371; end 45853; wordSize: 1; ints 14966; longs 7483; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  7336, Path bin: 10572, Info block: 38318, Data Array: 38371
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  14966, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   432
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   432
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   14966
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   14600
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  432, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  14600, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   365,  Current total: 938, julian Block date: 25933
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1971,  julian: 25933
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 67
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7142,  Maximum Hash: 8192,  Bin Hash: 2218228184216103536
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7320; end 7320; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10772; end 10971; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10772, Specific bin address: 10772
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   45874
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45874; end 45912; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  45874; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45913; end 45926; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     45927; end 47300; wordSize: 1; ints 2748; longs 1374; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  7320, Path bin: 10772, Info block: 45874, Data Array: 45927
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  2748, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   67
+ =====DSS===Debug: ztsDisaggregate; numberStored:   67
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   67
+ =====DSS===Debug: ztsDisaggregate; numberStored:   67
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   2748
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   67
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   67
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   67
+ =====DSS===Debug: ztsDisaggregate; numberValues:   67
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   2680
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   67
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  67, Number stored: 67, Number Expanded: 67
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  2680, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   67,  Current total: 1005, julian Block date: 26298
+ =====DSS===Debug: ztsRetrieveIrreg; Exit, Record Found 
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   1005
+ =====DSS===Debug: ztsRetrieveIrreg; julianBaseDate:   0
+ =====DSS===Debug: ztsRetrieveIrreg; First value read:   07Jun1968  08:00:00;  0.000000
+ =====DSS===Debug: ztsRetrieveIrreg; Last value read:    08Mar1971  08:00:00;  20002.000000
+ 
+ =====DSS===Debug: zlocationRetrieve; Enter; Original pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zlocationRetrieve; Location pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not loaded, (invalid info block), loading 
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Table Hash:  4650,  Maximum Hash: 8192,  Bin Hash: 3395408452865245519
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     4828; end 4828; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not found 
+ 
+ =====DSS===Debug: ztsRetrieve; Exit; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieve; status:   0
+ =====DSS===Debug: ztsRetrieve; numberValues:   1005
+ =====DSS===Debug: ztsRetrieve; sizeEachValueRead:   40
+ 
+ =====DSS===Debug: ztsStore; Enter ztsStore; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsStore; storageFlag:   1
+ =====DSS===Debug: ztsStore; Time window prior to processing:  
+ =====DSS===Debug: ztsStore; Computed time window 
+ =====DSS===Debug: ztsStore; startJulian-------->:   24995
+ =====DSS===Debug: ztsStore; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsStore; endJulian---------->:   25004
+ =====DSS===Debug: ztsStore; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsStore; First value time (raw):   35993280
+ =====DSS===Debug: ztsStore; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsStore; Start date: 07JUN1968, (julian: 24995) 
+ =====DSS===Debug: ztsStore; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsStore; End date:   16JUN1968, (julian: 25004) 
+ =====DSS===Debug: ztsStore; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsStore; Time offset: 0 seconds 
+ =====DSS===Debug: ztsStore; Time interval: -3 seconds 
+ =====DSS===Debug: ztsStore; Block size: 3 
+ =====DSS===Debug: ztsStore; Start block date: 01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsStore; End block date:   01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsStore; Internal startJulian-------->:   24995
+ =====DSS===Debug: ztsStore; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsStore; Internal endJulian---------->:   25004
+ =====DSS===Debug: ztsStore; Internal endTimeSeconds----->:   28800
+ Time window specified for record: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsProcessTimes; Computed time window 
+ =====DSS===Debug: ztsProcessTimes; startJulian-------->:   24995
+ =====DSS===Debug: ztsProcessTimes; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsProcessTimes; endJulian---------->:   25004
+ =====DSS===Debug: ztsProcessTimes; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsProcessTimes; First value time (raw):   35993280
+ =====DSS===Debug: ztsProcessTimes; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsProcessTimes; Start date: 07JUN1968, (julian: 24995) 
+ =====DSS===Debug: ztsProcessTimes; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsProcessTimes; End date:   16JUN1968, (julian: 25004) 
+ =====DSS===Debug: ztsProcessTimes; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsProcessTimes; Time offset: 0 seconds 
+ =====DSS===Debug: ztsProcessTimes; Time interval: -3 seconds 
+ =====DSS===Debug: ztsProcessTimes; Block size: 3 
+ =====DSS===Debug: ztsProcessTimes; Start block date: 01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsProcessTimes; End block date:   01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsProcessTimes; Internal startJulian-------->:   24995
+ =====DSS===Debug: ztsProcessTimes; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsProcessTimes; Internal endJulian---------->:   25004
+ =====DSS===Debug: ztsProcessTimes; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsStore; intervalType:   1
+ =====DSS===Debug: ztsStore; storageFlag:   1
+ =====DSS===Debug: ztsStore; storageFlag = 1  replace datasets. 
+ =====DSS===Debug: ztsStore; Double profiles values provided. 
+ =====DSS===Debug: zinquire; Request:  writ
+ 
+ =====DSS===Debug: ztsStoreIrreg; Handle:   3
+ =====DSS===Debug: ztsStoreIrreg; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ 
+ Times and values for beginning of array, up to  0
+ =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 3, lock: 1:, flush: 1 
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zlocking; Exit;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 1 
+ =====DSS===Debug: zlocking; File is Locked. 
+ =====DSS===Debug: ztsStoreIrreg; First block date:   01Jan1968,  julian: 24837
+ =====DSS===Debug: ztsStoreIrreg; End of time window block date:   01Jan1968,  julian: 24837
+ =====DSS===Debug: ztsStoreIrreg; Block date:   01Jan1968,  julian: 24837
+ =====DSS===Debug: ztsStoreIrreg; Next Block date:   01Jan1969,  julian: 25203
+ =====DSS===Debug: ztsStoreIrreg; Number to store in this block (record):    0
+ =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 3, lock: 0:, flush: 1 
+ =====DSS===Debug: zlocking; Exit;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 0 
+ =====DSS===Debug: zlocking; File is Locked. 
+ =====DSS===Debug: ztsStoreIrreg; Exit, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsStore; Exit ztsStore; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsStore; Status:   0
+ 
+ 
+ =====DSS===Debug: ztsRetrieve; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   -1
+ =====DSS===Debug: ztsRetrieve; retrieveDoublesFlag:   2
+ =====DSS===Debug: ztsRetrieve; boolRetrieveQualityNotes:   1
+ =====DSS===Debug: ztsRetrieve; Time window prior to processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window does not exist; Input times 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 07JUN1968, (julian: 24995) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 07JUN1968, (julian: 24995) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1971, (julian: 25933) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieve; intervalType:   1
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   -1
+ 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 07JUN1968, (julian: 24995) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1971, (julian: 25933) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   24995
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieveIrreg; Handle:   3
+ =====DSS===Debug: ztsRetrieveIrreg; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Enter ztsGetSizesInternal, Pathname:  /a/b/Temperature-Depth/01JAN1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2934,  Maximum Hash: 8192,  Bin Hash: 4506889532711844744
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3112; end 3112; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10172; end 10371; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10172, Specific bin address: 10172
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   47321
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47321; end 47359; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  47321; Info size 39; Data Type 117; Version 2
+ =====DSS===Debug: zreadDisk; Physical read at address     47360; end 47373; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2918,  Maximum Hash: 8192,  Bin Hash: 2874299970382059559
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3096; end 3096; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10372; end 10571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10372, Specific bin address: 10372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   30762
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30762; end 30800; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  30762; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     30801; end 30814; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7158,  Maximum Hash: 8192,  Bin Hash: 3850817746545888721
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7336; end 7336; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10572; end 10771; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10572, Specific bin address: 10572
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   38318
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38318; end 38356; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  38318; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     38357; end 38370; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7142,  Maximum Hash: 8192,  Bin Hash: 2218228184216103536
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7320; end 7320; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10772; end 10971; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10772, Specific bin address: 10772
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   45874
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45874; end 45912; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  45874; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     45913; end 45926; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit ztsGetSizesInternal, Status:   0
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1968,  julian: 24837
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 1005
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2934,  Maximum Hash: 8192,  Bin Hash: 4506889532711844744
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3112; end 3112; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10172; end 10371; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10172, Specific bin address: 10172
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   47321
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47321; end 47359; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  47321; Info size 39; Data Type 117; Version 2
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47360; end 47373; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     47374; end 51637; wordSize: 1; ints 8528; longs 4264; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     51638; end 51657; wordSize: 1; ints 40; longs 20; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 2:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  3112, Path bin: 10172, Info block: 47321, Data Array: 47374
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  8528, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   1005
+ =====DSS===Debug: ztsDisaggregate; numberStored:   208
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   1005
+ =====DSS===Debug: ztsDisaggregate; numberStored:   208
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   8528
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   208
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   208
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   208
+ =====DSS===Debug: ztsDisaggregate; numberValues:   208
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   8320
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   208
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  1005, Number stored: 208, Number Expanded: 208
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  8320, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   208,  Current total: 208, julian Block date: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1969,  julian: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 797
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2918,  Maximum Hash: 8192,  Bin Hash: 2874299970382059559
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3096; end 3096; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10372; end 10571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10372, Specific bin address: 10372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   30762
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30762; end 30800; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  30762; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30801; end 30814; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     30815; end 38297; wordSize: 1; ints 14966; longs 7483; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  3096, Path bin: 10372, Info block: 30762, Data Array: 30815
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  14966, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   797
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   797
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   14966
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   14600
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  797, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  14600, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   365,  Current total: 573, julian Block date: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1970,  julian: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 432
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7158,  Maximum Hash: 8192,  Bin Hash: 3850817746545888721
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7336; end 7336; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10572; end 10771; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10572, Specific bin address: 10572
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   38318
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38318; end 38356; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  38318; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38357; end 38370; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     38371; end 45853; wordSize: 1; ints 14966; longs 7483; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  7336, Path bin: 10572, Info block: 38318, Data Array: 38371
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  14966, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   432
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   432
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   14966
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   14600
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  432, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  14600, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   365,  Current total: 938, julian Block date: 25933
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1971,  julian: 25933
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 67
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7142,  Maximum Hash: 8192,  Bin Hash: 2218228184216103536
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7320; end 7320; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10772; end 10971; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10772, Specific bin address: 10772
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   45874
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45874; end 45912; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  45874; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45913; end 45926; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     45927; end 47300; wordSize: 1; ints 2748; longs 1374; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  7320, Path bin: 10772, Info block: 45874, Data Array: 45927
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  2748, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   67
+ =====DSS===Debug: ztsDisaggregate; numberStored:   67
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   67
+ =====DSS===Debug: ztsDisaggregate; numberStored:   67
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   2748
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   67
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   67
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   67
+ =====DSS===Debug: ztsDisaggregate; numberValues:   67
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   2680
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   67
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  67, Number stored: 67, Number Expanded: 67
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  2680, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   67,  Current total: 1005, julian Block date: 26298
+ =====DSS===Debug: ztsRetrieveIrreg; Exit, Record Found 
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   1005
+ =====DSS===Debug: ztsRetrieveIrreg; julianBaseDate:   0
+ =====DSS===Debug: ztsRetrieveIrreg; First value read:   07Jun1968  08:00:00;  0.000000
+ =====DSS===Debug: ztsRetrieveIrreg; Last value read:    08Mar1971  08:00:00;  20002.000000
+ 
+ =====DSS===Debug: zlocationRetrieve; Enter; Original pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zlocationRetrieve; Location pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not loaded, (invalid info block), loading 
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+
+
+er read does not match that written *****
+en:       1000  Read:       1005
+ble to double, Loc 33
+
+
+====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Table Hash:  4650,  Maximum Hash: 8192,  Bin Hash: 3395408452865245519
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     4828; end 4828; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not found 
+ 
+ =====DSS===Debug: ztsRetrieve; Exit; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieve; status:   0
+ =====DSS===Debug: ztsRetrieve; numberValues:   1005
+ =====DSS===Debug: ztsRetrieve; sizeEachValueRead:   40
+ 
+ 
+ ******  FORCE ERRORS  *****
+ /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ 
+ testProfileIrreg failed!
+ Loc 34
+ 
+ =====DSS===Debug: ztsRetrieve; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   0
+ =====DSS===Debug: ztsRetrieve; retrieveDoublesFlag:   2
+ =====DSS===Debug: ztsRetrieve; boolRetrieveQualityNotes:   1
+ =====DSS===Debug: ztsRetrieve; Time window prior to processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window does not exist; Input times 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24500
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25499
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 29JAN1967, (julian: 24500) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   24OCT1969, (julian: 25499) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24500
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25499
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 29JAN1967, (julian: 24500) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   24OCT1969, (julian: 25499) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1967, (julian: 24472) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1969, (julian: 25203) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   24500
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   25499
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieve; intervalType:   1
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   0
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 0:  Adhere to time window provided. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 1:  Retrieve one value previous to start of time window. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 2:  Retrieve one value after end of time window. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 3:  Retrieve one value before and one value after time window. 
+ 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   24500
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25499
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 29JAN1967, (julian: 24500) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   24OCT1969, (julian: 25499) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1967, (julian: 24472) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1969, (julian: 25203) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   24500
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   25499
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieveIrreg; Handle:   3
+ =====DSS===Debug: ztsRetrieveIrreg; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Enter ztsGetSizesInternal, Pathname:  /a/b/Temperature-Depth/01JAN1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2950,  Maximum Hash: 8192,  Bin Hash: 6139479095041629929
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3128; end 3128; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2934,  Maximum Hash: 8192,  Bin Hash: 4506889532711844744
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3112; end 3112; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10172; end 10371; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10172, Specific bin address: 10172
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   47321
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47321; end 47359; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  47321; Info size 39; Data Type 117; Version 2
+ =====DSS===Debug: zreadDisk; Physical read at address     47360; end 47373; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2918,  Maximum Hash: 8192,  Bin Hash: 2874299970382059559
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3096; end 3096; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10372; end 10571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10372, Specific bin address: 10372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   30762
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30762; end 30800; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  30762; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     30801; end 30814; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit ztsGetSizesInternal, Status:   0
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1967,  julian: 24472
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 573
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2950,  Maximum Hash: 8192,  Bin Hash: 6139479095041629929
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3128; end 3128; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Record does not exist.  Handle 3;  Pathname: /a/b/Temperature-Depth/01Jan1967/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   0,  Current total: 0, julian Block date: 24837
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1968,  julian: 24837
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 573
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2934,  Maximum Hash: 8192,  Bin Hash: 4506889532711844744
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3112; end 3112; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10172; end 10371; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10172, Specific bin address: 10172
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   47321
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47321; end 47359; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  47321; Info size 39; Data Type 117; Version 2
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     47360; end 47373; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     47374; end 51637; wordSize: 1; ints 8528; longs 4264; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     51638; end 51657; wordSize: 1; ints 40; longs 20; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 2:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  3112, Path bin: 10172, Info block: 47321, Data Array: 47374
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  8528, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   573
+ =====DSS===Debug: ztsDisaggregate; numberStored:   208
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   573
+ =====DSS===Debug: ztsDisaggregate; numberStored:   208
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   8528
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   208
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   208
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   208
+ =====DSS===Debug: ztsDisaggregate; numberValues:   208
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   8320
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   208
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  573, Number stored: 208, Number Expanded: 208
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  8320, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   208,  Current total: 208, julian Block date: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1969,  julian: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 365
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2918,  Maximum Hash: 8192,  Bin Hash: 2874299970382059559
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3096; end 3096; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10372; end 10571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10372, Specific bin address: 10372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   30762
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30762; end 30800; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  30762; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30801; end 30814; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     30815; end 38297; wordSize: 1; ints 14966; longs 7483; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  3096, Path bin: 10372, Info block: 30762, Data Array: 30815
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  14966, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   365
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   365
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   14966
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   14600
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+  
+
+er read does not match that written *****
+en:       1000  Read:        505
+ble to double
+
+
+Debug: ztsIrregReadBlock; Number to read:  365, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  14600, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   297,  Current total: 505, julian Block date: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Exit, Record Found 
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   505
+ =====DSS===Debug: ztsRetrieveIrreg; julianBaseDate:   0
+ =====DSS===Debug: ztsRetrieveIrreg; First value read:   07Jun1968  08:00:00;  0.000000
+ =====DSS===Debug: ztsRetrieveIrreg; Last value read:    24Oct1969  08:00:00;  7012.000000
+ 
+ =====DSS===Debug: zlocationRetrieve; Enter; Original pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zlocationRetrieve; Location pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not loaded, (invalid info block), loading 
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Table Hash:  4650,  Maximum Hash: 8192,  Bin Hash: 3395408452865245519
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     4828; end 4828; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not found 
+ 
+ =====DSS===Debug: ztsRetrieve; Exit; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieve; status:   0
+ =====DSS===Debug: ztsRetrieve; numberValues:   505
+ =====DSS===Debug: ztsRetrieve; sizeEachValueRead:   40
+ /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ 
+ testProfileIrreg failed!
+ Loc 36
+ ******  Done  *****
+ 
+ =====DSS===Debug: ztsRetrieve; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   0
+ =====DSS===Debug: ztsRetrieve; retrieveDoublesFlag:   2
+ =====DSS===Debug: ztsRetrieve; boolRetrieveQualityNotes:   1
+ =====DSS===Debug: ztsRetrieve; Time window prior to processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window does not exist; Input times 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   25500
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   26499
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 25OCT1969, (julian: 25500) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   20JUL1972, (julian: 26499) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   25500
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   26499
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 25OCT1969, (julian: 25500) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   20JUL1972, (julian: 26499) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1969, (julian: 25203) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1972, (julian: 26298) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   25500
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   26499
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieve; intervalType:   1
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   0
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 0:  Adhere to time window provided. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 1:  Retrieve one value previous to start of time window. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 2:  Retrieve one value after end of time window. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 3:  Retrieve one value before and one value after time window. 
+ 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   25500
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   26499
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 25OCT1969, (julian: 25500) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   20JUL1972, (julian: 26499) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1969, (julian: 25203) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1972, (julian: 26298) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   25500
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   26499
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieveIrreg; Handle:   3
+ =====DSS===Debug: ztsRetrieveIrreg; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Enter ztsGetSizesInternal, Pathname:  /a/b/Temperature-Depth/01JAN1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2918,  Maximum Hash: 8192,  Bin Hash: 2874299970382059559
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3096; end 3096; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10372; end 10571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10372, Specific bin address: 10372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   30762
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30762; end 30800; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  30762; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     30801; end 30814; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7158,  Maximum Hash: 8192,  Bin Hash: 3850817746545888721
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7336; end 7336; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10572; end 10771; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10572, Specific bin address: 10572
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   38318
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38318; end 38356; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  38318; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     38357; end 38370; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7142,  Maximum Hash: 8192,  Bin Hash: 2218228184216103536
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7320; end 7320; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10772; end 10971; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10772, Specific bin address: 10772
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   45874
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45874; end 45912; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  45874; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     45913; end 45926; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7126,  Maximum Hash: 8192,  Bin Hash: 585638621886318351
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7304; end 7304; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Exit ztsGetSizesInternal, Status:   -1
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1969,  julian: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 797
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  2918,  Maximum Hash: 8192,  Bin Hash: 2874299970382059559
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     3096; end 3096; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10372; end 10571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10372, Specific bin address: 10372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   30762
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30762; end 30800; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  30762; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     30801; end 30814; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     30815; end 38297; wordSize: 1; ints 14966; longs 7483; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     38298; end 38317; wordSize: 1; ints 40; longs 20; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  3096, Path bin: 10372, Info block: 30762, Data Array: 30815
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  14966, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   797
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   797
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   14966
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   14600
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  797, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  14600, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   68,  Current total: 68, julian Block date: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1970,  julian: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 729
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7158,  Maximum Hash: 8192,  Bin Hash: 3850817746545888721
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7336; end 7336; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10572; end 10771; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10572, Specific bin address: 10572
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   38318
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38318; end 38356; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  38318; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     38357; end 38370; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     38371; end 45853; wordSize: 1; ints 14966; longs 7483; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  7336, Path bin: 10572, Info block: 38318, Data Array: 38371
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  14966, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   729
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   729
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   14966
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   14600
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  729, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  14600, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   365,  Current total: 433, julian Block date: 25933
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1971,  julian: 25933
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 364
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7142,  Maximum Hash: 8192,  Bin Hash: 2218228184216103536
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7320; end 7320; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     10772; end 10971; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  10772, Specific bin address: 10772
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   45874
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45874; end 45912; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  45874; Info size 39; Data Type 117; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     45913; end 45926; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     45927; end 47300; wordSize: 1; ints 2748; longs 1374; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  7320, Path bin: 10772, Info block: 45874, Data Array: 45927
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  2748, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   364
+ =====DSS===Debug: ztsDisaggregate; numberStored:   67
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   364
+ =====DSS===Debug: ztsDisaggregate; numberStored:   67
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   2748
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   67
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   67
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   67
+ =====DSS===Debug: ztsDisaggregate; numberValues:   67
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   2680
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   67
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  364, Number stored: 67, Number Expanded: 67
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  40, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  2680, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   67,  Current total: 500, julian Block date: 26298
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1972,  julian: 26298
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 297
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  7126,  Maximum Hash: 8192,  Bin Hash: 585638621886318351
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     7304; end 7304; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ -----DSS--- zread   Record does not exist.  Handle 3;  Pathname: /a/b/Temperature-Depth/01Jan1972/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   0,  Current total: 500, julian Block date: 26664
+ =====DSS===Debug: ztsRetrieveIrreg; Exit, Record Found 
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   500
+ =====DSS===Debug: ztsRetrieveIrreg; julianBaseDate:   0
+ =====DSS===Debug: ztsRetrieveIrreg; First value read:   25Oct1969  08:00:00;  500000.000000
+ =====DSS===Debug: ztsRetrieveIrreg; Last value read:    08Mar1971  08:00:00;  0.000000
+ 
+ =====DSS===Debug: zlocationRetrieve; Enter; Original pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: zlocationRetrieve; Location pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not loaded, (invalid info block), loading 
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Table Hash:  4650,  Maximum Hash: 8192,  Bin Hash: 3395408452865245519
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     4828; end 4828; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not found 
+ 
+ =====DSS===Debug: ztsRetrieve; Exit; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Double Profile Test/
+ =====DSS===Debug: ztsRetrieve; status:   0
+ =====DSS===Debug: ztsRetrieve; numberValues:   500
+ =====DSS===Debug: ztsRetrieve; sizeEachValueRead:   40
+ Dates / times do not match at element  0
+ =====DSS===Debug:  ; First date / time:   25Oct1969  00:00:00  (25500, 0)
+ =====DSS===Debug:  ; Second date / time:   25Oct1969  08:00:00  (25500, 28800)
+ 
+ =====DSS===Debug: ztsRetrieve; Enter, Pathname:  /a/b/Temperature-Depth/20Jun2020/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   0
+ =====DSS===Debug: ztsRetrieve; retrieveDoublesFlag:   2
+ =====DSS===Debug: ztsRetrieve; boolRetrieveQualityNotes:   1
+ =====DSS===Debug: ztsRetrieve; Time window prior to processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window does not exist; Input times 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   25000
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 12JUN1968, (julian: 25000) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   25000
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 12JUN1968, (julian: 25000) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1971, (julian: 25933) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   25000
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieve; intervalType:   1
+ =====DSS===Debug: ztsRetrieve; retrieveFlag:   0
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 0:  Adhere to time window provided. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 1:  Retrieve one value previous to start of time window. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 2:  Retrieve one value after end of time window. 
+ =====DSS===Debug: ztsRetrieve; retrieveFlag = 3:  Retrieve one value before and one value after time window. 
+ 
+ =====DSS===Debug: ztsRetrieve; Time window after processing:  
+ =====DSS===Debug: ztsRetrieve; Computed time window 
+ =====DSS===Debug: ztsRetrieve; startJulian-------->:   25000
+ =====DSS===Debug: ztsRetrieve; startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; endTimeSeconds----->:   28800
+ =====DSS===Debug: ztsRetrieve; Base date: 31DEC1899, (julian: 0) 
+ =====DSS===Debug: ztsRetrieve; Start date: 12JUN1968, (julian: 25000) 
+ =====DSS===Debug: ztsRetrieve; Start time: 08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; End date:   08MAR1971, (julian: 25999) 
+ =====DSS===Debug: ztsRetrieve; End time:   08:00:00, (seconds: 28800) 
+ =====DSS===Debug: ztsRetrieve; Time offset: 0 seconds 
+ =====DSS===Debug: ztsRetrieve; Time interval: -3 seconds 
+ =====DSS===Debug: ztsRetrieve; Block size: 3 
+ =====DSS===Debug: ztsRetrieve; Start block date: 01JAN1968, (julian: 24837) 
+ =====DSS===Debug: ztsRetrieve; End block date:   01JAN1971, (julian: 25933) 
+ =====DSS===Debug: ztsRetrieve; Internal startJulian-------->:   25000
+ =====DSS===Debug: ztsRetrieve; Internal startTimeSeconds--->:   28800
+ =====DSS===Debug: ztsRetrieve; Internal endJulian---------->:   25999
+ =====DSS===Debug: ztsRetrieve; Internal endTimeSeconds----->:   28800
+ 
+ =====DSS===Debug: ztsRetrieveIrreg; Handle:   3
+ =====DSS===Debug: ztsRetrieveIrreg; Pathname:  /a/b/Temperature-Depth/20Jun2020/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Enter ztsGetSizesInternal, Pathname:  /a/b/Temperature-Depth/01JAN1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  5265,  Maximum Hash: 8192,  Bin Hash: 1463380151577357937
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     5443; end 5443; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     9372; end 9571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  9372, Specific bin address: 9372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   15773
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     15773; end 15811; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  15773; Info size 39; Data Type 112; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     15812; end 15825; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  5249,  Maximum Hash: 8192,  Bin Hash: 815659711705121266
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     5427; end 5427; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     9572; end 9771; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  9572, Specific bin address: 9572
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   17968
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     17968; end 18006; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  17968; Info size 39; Data Type 112; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     18007; end 18020; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  1041,  Maximum Hash: 8192,  Bin Hash: 5012554108225466120
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     1219; end 1219; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     9772; end 9971; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  9772, Specific bin address: 9772
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   21864
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     21864; end 21902; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  21864; Info size 39; Data Type 112; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     21903; end 21916; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  1025,  Maximum Hash: 8192,  Bin Hash: 4364833668353229449
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     1203; end 1203; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     9972; end 10171; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  9972, Specific bin address: 9972
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   25760
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     25760; end 25798; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  25760; Info size 39; Data Type 112; Version 1
+ =====DSS===Debug: zreadDisk; Physical read at address     25799; end 25812; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit ztsGetSizesInternal, Status:   0
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1968,  julian: 24837
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 1000
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  5265,  Maximum Hash: 8192,  Bin Hash: 1463380151577357937
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     5443; end 5443; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     9372; end 9571; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  9372, Specific bin address: 9372
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   15773
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     15773; end 15811; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  15773; Info size 39; Data Type 112; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     15812; end 15825; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     15826; end 17957; wordSize: 1; ints 4264; longs 2132; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     17958; end 17967; wordSize: 1; ints 20; longs 10; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1968/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  5443, Path bin: 9372, Info block: 15773, Data Array: 15826
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  4264, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   1000
+ =====DSS===Debug: ztsDisaggregate; numberStored:   203
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   1000
+ =====DSS===Debug: ztsDisaggregate; numberStored:   203
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   4264
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   203
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   203
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   203
+ =====DSS===Debug: ztsDisaggregate; numberValues:   203
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   4060
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   203
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  1000, Number stored: 203, Number Expanded: 203
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  20, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  4060, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   203,  Current total: 203, julian Block date: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1969,  julian: 25203
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 797
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  5249,  Maximum Hash: 8192,  Bin Hash: 815659711705121266
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     5427; end 5427; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     9572; end 9771; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  9572, Specific bin address: 9572
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   17968
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     17968; end 18006; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  17968; Info size 39; Data Type 112; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     18007; end 18020; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     18021; end 21853; wordSize: 1; ints 7666; longs 3833; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1969/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  5427, Path bin: 9572, Info block: 17968, Data Array: 18021
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  7666, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   797
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   797
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   7666
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   7300
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  797, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  20, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  7300, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   365,  Current total: 568, julian Block date: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1970,  julian: 25568
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 432
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  1041,  Maximum Hash: 8192,  Bin Hash: 5012554108225466120
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     1219; end 1219; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     9772; end 9971; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  9772, Specific bin address: 9772
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   21864
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     21864; end 21902; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  21864; Info size 39; Data Type 112; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     21903; end 21916; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     21917; end 25749; wordSize: 1; ints 7666; longs 3833; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1970/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  1219, Path bin: 9772, Info block: 21864, Data Array: 21917
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  7666, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   432
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   432
+ =====DSS===Debug: ztsDisaggregate; numberStored:   365
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   7666
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   365
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   365
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   365
+ =====DSS===Debug: ztsDisaggregate; numberValues:   365
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   7300
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   365
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  432, Number stored: 365, Number Expanded: 365
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  20, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  7300, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   365,  Current total: 933, julian Block date: 25933
+ =====DSS===Debug: ztsRetrieveIrreg; Block date:   01Jan1971,  julian: 25933
+ =====DSS===Debug: ztsRetrieveIrreg; Block pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Enter, Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Handle:  3;  Max Number to read: 67
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zhash; Table Hash:  1025,  Maximum Hash: 8192,  Bin Hash: 4364833668353229449
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     1203; end 1203; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     9972; end 10171; wordSize: 2; ints 400; longs 200; handle 3; status 0.   
+ =====DSS===Debug: zcheck; Pathname found at bin start address:  9972, Specific bin address: 9972
+ =====DSS===Debug: zcheck; Pathname status:   1
+ =====DSS===Debug: zcheck; Info Address:   25760
+ -----DSS--- zcheck; Record found: /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     25760; end 25798; wordSize: 2; ints 78; longs 39; handle 3; status 0.   
+ =====DSS===Debug: zreadInfo; Exit; Record found.  Info address  25760; Info size 39; Data Type 112; Version 1
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zreadDisk; Physical read at address     25799; end 25812; wordSize: 1; ints 28; longs 14; handle 3; status 0.   
+ =====DSS===Debug: zreadDisk; Physical read at address     25813; end 26516; wordSize: 1; ints 1408; longs 704; handle 3; status 0.   
+ =====DSS===Debug: zpermRead; Handle:   3
+ =====DSS===Debug: zreadDisk; Physical read at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0.   
+ =====DSS===Debug: zreadInternal; Exit; status:  0
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Values Compression:  0, Quality Compression: 0, Notes Compression: 0
+ -----DSS--- zread   Handle 3;  Version 1:  /a/b/Temperature-Depth/01Jan1971/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsIrregReadBlock; Addresses;  table:  1203, Path bin: 9972, Info block: 25760, Data Array: 25813
+ =====DSS===Debug: ztsIrregReadBlock; Size data array:  1408, Size internal header: 28, Size compression header: 0
+ =====DSS===Debug: ztsDisaggregate; Enter ztsDisaggregate numberToRead:   67
+ =====DSS===Debug: ztsDisaggregate; numberStored:   67
+ =====DSS===Debug: zinquire; Request:  fver
+ =====DSS===Debug: zinquire; number:   77267
+ =====DSS===Debug: ztsDisaggregate; numberToRead:   67
+ =====DSS===Debug: ztsDisaggregate; numberStored:   67
+ =====DSS===Debug: ztsDisaggregate; dataInNumber:   1408
+ =====DSS===Debug: ztsDisaggregate; *numberExpanded:   67
+ =====DSS===Debug: ztsDisaggregate; blockStartPosition:   0
+ =====DSS===Debug: ztsDisaggregate; positionRelativeFirstValid:   0
+ =====DSS===Debug: ztsDisaggregate; numberStoredToRead:   67
+ =====DSS===Debug: ztsDisaggregate; startArray:   0
+ =====DSS===Debug: ztsDisaggregate; endArray:   67
+ =====DSS===Debug: ztsDisaggregate; numberValues:   67
+ =====DSS===Debug: ztsDisaggregate; valuesLength:   1340
+ =====DSS===Debug: ztsDisaggregate; dataInPosition:   67
+ =====DSS===Debug: ztsDisaggregate; Exit ztsDisaggregate status:   0
+ =====DSS===Debug: ztsIrregReadBlock; Number to read:  67, Number stored: 67, Number Expanded: 67
+ =====DSS===Debug: ztsIrregReadBlock; Length each value:  20, Number each flag: 0, Number each note: 0
+ =====DSS===Debug: ztsIrregReadBlock; Number values array:  1340, Number quality flags: 0, Number notes: 0
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   67,  Current total: 1000, julian Block date: 26298
+ =====DSS===Debug: ztsRetrieveIrreg; Exit, Record Found 
+ =====DSS===Debug: ztsRetrieveIrreg; Number read this block:   1000
+ =====DSS===Debug: ztsRetrieveIrreg; julianBaseDate:   0
+ =====DSS===Debug: ztsRetrieveIrreg; First value read:   12Jun1968  08:00:00;  0.000000
+ =====DSS===Debug: ztsRetrieveIrreg; Last value read:    08Mar1971  08:00:00;  0.000000
+ 
+ =====DSS===Debug: zlocationRetrieve; Enter; Original pathname:  /a/b/Temperature-Depth/20Jun2020/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: zlocationRetrieve; Location pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Enter handle:   3
+ =====DSS===Debug: zreadInternal; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not loaded, (invalid info block), loading 
+ =====DSS===Debug: zreadInfo; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Handle:   3;
+ =====DSS===Debug: zcheck; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zcheck; Handle:   3
+ =====DSS===Debug: zcheckKeys; Enter 
+ =====DSS===Debug: zcheckKeys; Exit, status:   0
+ =====DSS===Debug: zcheckMultiUser; Handle:   3
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zcheckMultiUser; Exit;  Handle:  3;
+ =====DSS===Debug: zcheckMultiUser; Multi-user Access:  3,   locked: 1
+ =====DSS===Debug: zhash; Enter; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Pathname:  /a/b/Location Info////
+ =====DSS===Debug: zhash; Table Hash:  4650,  Maximum Hash: 8192,  Bin Hash: 3395408452865245519
+ =====DSS===Debug: zcheck; Record not previously checked; Searching file for record 
+ =====DSS===Debug: zreadDisk; Physical read at address     4828; end 4828; wordSize: 2; ints 2; longs 1; handle 3; status 0.   
+ -----DSS--- zcheck; Record not found: /a/b/Location Info////
+ =====DSS===Debug: zreadInfo; Exit; Record Not found:  /a/b/Location Info////
+ =====DSS===Debug: zreadInternal; Record not found 
+ 
+ =====DSS===Debug: ztsRetrieve; Exit; Pathname:  /a/b/Temperature-Depth/20Jun2020/~1Day/Irregular Float Profile Test/
+ =====DSS===Debug: ztsRetrieve; status:   0
+ =====DSS===Debug: ztsRetrieve; numberValues:   1000
+ =====DSS===Debug: ztsRetrieve; sizeEachValueRead:   20
+stProfileIrreg  successfully!
+ =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 1, lock: 1:, flush: 1 
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 2 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 3, word address: 104, number bytes: 192
+ =====DSS===Debug: zlocking; zlockPassive, no other process write locks found 
+ =====DSS===Debug: zlocking; Exit;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 1 
+ =====DSS===Debug: zlocking; File is Locked. 
+ =====DSS===Debug: zwriteDisk; Write to disk at address     153; end 153; wordSize: 2; ints 2; longs 1; handle 3; status 0. 
+ =====DSS===Debug: zlocking; Enter active lock;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, level: 4, lock: 0:, flush: 1 
+ =====DSS===Debug: zwriteDisk; Write to disk at address     0; end 99; wordSize: 2; ints 200; longs 100; handle 3; status 0. 
+ =====DSS===Debug: zpermWrite; Write perm;  Handle:  3
+ =====DSS===Debug: zpermWrite; Write perm;  Status:  0
+ =====DSS===Debug: zlocking; Exit;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, lock: 0 
+ =====DSS===Debug: zlocking; File is Locked. 
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 0 ,  Write access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 0, word address: 103, number bytes: 8
+ =====DSS===Debug: zlocking; File Write Lock is Unlocked. 
+ =====DSS===Debug: zlocking; Enter Lock Passive;  Handle   3;
+ =====DSS===Debug: zlocking; Multi-user Access 3, locked: 1, Request to lock write word: 0 ,  Read access mode.
+ =====DSS===Debug: zlocking; zlockDss;  Handle   3, mode: 0, word address: 128, number bytes: 8
+ =====DSS===Debug: zlocking; File Read Lock is Unlocked. 
+      -----DSS---zclose  Handle 3;  Process: 1900;  File: C:\project\heclib\test\bin\testDss7.dss
+                         Number records:         8
+                         File size:              54898  64-bit words
+                         File size:              428 Kb;  0 Mb
+                         Dead space:             8431
+                         Hash range:             8192
+                         Number hash used:       8
+                         Max paths for hash:     1
+                         Corresponding hash:     5265
+                         Number non unique hash: 0
+                         Number bins used:       8
+                         Number overflow bins:   0
+                         Number physical reads:  354
+                         Number physical writes: 88
+                         Number denied locks:    0
+ =====DSS===Debug: zmemoryFree; Free pathname bin memory;  Handle:  3;  Memory location: 1bdbd036010
+ =====DSS===Debug: zmemoryFree; Free record header memory;  Handle:  3;  Memory location: 1bdbd0348f0
+ =====DSS===Debug: zmemoryFree; Free main file header memory;  Handle:  3;  Memory location: 1bdbd034570
